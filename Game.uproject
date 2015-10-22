@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "../ue4",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "W1",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

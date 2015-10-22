@@ -1,0 +1,1025 @@
+Summary : 
+  MagicPostTag : 2653586369
+  Tag : -1641380927
+  LegacyFileVersion : -5
+  FileVersionUE3 : 864
+  FileVersionUE4 : 482
+  FolderName : None
+  PackageSource : 2061009752
+Export : 
+  - 
+    ObjectName : BaseCharacter_C
+    OuterIndex : None
+    ClassIndex : Import:/Script/Engine.BlueprintGeneratedClass
+    SuperIndex : Import:/Script/W1.W1Character
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : SimpleConstructionScript
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:BaseCharacter_C.SimpleConstructionScript_1
+      Next : None
+      SuperStruct : Import:/Script/W1.W1Character
+      Children : Export:BaseCharacter_C.UserConstructionScript
+      FuncMap : 
+        - 
+          Key : UserConstructionScript
+          Value : Export:BaseCharacter_C.UserConstructionScript
+      ClassFlags : 8650768
+      ClassWithin : Import:/Script/CoreUObject.Object
+      ClassConfigName : Game
+      ClassGeneratedBy : Export:BaseCharacter
+      ClassDefaultObject : Export:Default__BaseCharacter_C
+    Dependencies : 
+      - Export:BaseCharacter_C.SimpleConstructionScript_1
+      - Export:BaseCharacter_C.UserConstructionScript
+      - Export:BaseCharacter
+      - Export:Default__BaseCharacter_C
+    ObjectFlags : 9
+    NotForEditorGame : True
+  - 
+    ObjectName : UIRadarDetection
+    OuterIndex : Export:BaseCharacter_C
+    ClassIndex : Import:/Script/CoreUObject.ObjectProperty
+    SuperIndex : None
+    Object : 
+      Next : None
+      ArrayDim : 1
+      SaveFlags : 17179869188
+      RepNotifyFunc : None
+      PropertyClass : Import:/Game/UI/Mission/Components/UIRadarDetection.UIRadarDetection_C
+    Dependencies : 
+      - Import:/Game/UI/Mission/Components/UIRadarDetection.UIRadarDetection_C
+    ObjectFlags : 1
+    NotForEditorGame : True
+  - 
+    ObjectName : UserConstructionScript
+    OuterIndex : Export:BaseCharacter_C
+    ClassIndex : Import:/Script/CoreUObject.Function
+    SuperIndex : Import:/Script/Engine.Actor.UserConstructionScript
+    Object : 
+      Next : Export:BaseCharacter_C.UIRadarDetection
+      SuperStruct : Import:/Script/Engine.Actor.UserConstructionScript
+      Children : None
+      ScriptBytecodeSize : 5
+      ScriptStorageSize : 5
+      ScriptData : 
+        - 94
+        - 90
+        - 4
+        - 11
+        - 83
+      FunctionFlags : 201459712
+      EventGraphFunction : None
+    Dependencies : 
+      - Export:BaseCharacter_C.UIRadarDetection
+    ObjectFlags : 1
+    NotForEditorGame : True
+  - 
+    ObjectName : SceneComponent_1
+    OuterIndex : Export:BaseCharacter_C
+    ClassIndex : Import:/Script/Engine.SceneComponent
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : bVisualizeComponent
+            Type : BoolProperty
+            BoolVal : 1
+    ObjectFlags : 41
+    NotForEditorGame : True
+  - 
+    ObjectName : SimpleConstructionScript_1
+    OuterIndex : Export:BaseCharacter_C
+    ClassIndex : Import:/Script/Engine.SimpleConstructionScript
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : RootNodes
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:BaseCharacter_C.SimpleConstructionScript_1.SCS_Node_2
+        - 
+          Tag : 
+            Name : DefaultSceneRootNode
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:BaseCharacter_C.SimpleConstructionScript_1.SCS_Node_1
+    Dependencies : 
+      - Export:BaseCharacter_C.SimpleConstructionScript_1.SCS_Node_2
+      - Export:BaseCharacter_C.SimpleConstructionScript_1.SCS_Node_1
+    ObjectFlags : 8
+    NotForEditorGame : True
+  - 
+    ObjectName : SCS_Node_1
+    OuterIndex : Export:BaseCharacter_C.SimpleConstructionScript_1
+    ClassIndex : Import:/Script/Engine.SCS_Node
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : ComponentTemplate
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:BaseCharacter_C.SceneComponent_1
+        - 
+          Tag : 
+            Name : VariableName
+            Type : NameProperty
+          Property : DefaultSceneRoot
+        - 
+          Tag : 
+            Name : CategoryName
+            Type : TextProperty
+          Property : 
+            DisplayString : 
+              Source : Default
+        - 
+          Tag : 
+            Name : VariableGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : jDDlz97ATkCK21I61IXG8g==
+    Dependencies : 
+      - Export:BaseCharacter_C.SceneComponent_1
+    ObjectFlags : 8
+    NotForEditorGame : True
+  - 
+    ObjectName : SCS_Node_2
+    OuterIndex : Export:BaseCharacter_C.SimpleConstructionScript_1
+    ClassIndex : Import:/Script/Engine.SCS_Node
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : ComponentTemplate
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:BaseCharacter_C.UIRadarDetection_GEN_VARIABLE
+        - 
+          Tag : 
+            Name : VariableName
+            Type : NameProperty
+          Property : UIRadarDetection
+        - 
+          Tag : 
+            Name : CategoryName
+            Type : TextProperty
+          Property : 
+            Flags : 8
+            DisplayString : 
+              Source : Default
+        - 
+          Tag : 
+            Name : VariableGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : yNPRRRJiFkCya8YERhTWHg==
+    Dependencies : 
+      - Export:BaseCharacter_C.UIRadarDetection_GEN_VARIABLE
+    ObjectFlags : 8
+    NotForEditorGame : True
+  - 
+    ObjectName : UIRadarDetection_GEN_VARIABLE
+    OuterIndex : Export:BaseCharacter_C
+    ClassIndex : Import:/Game/UI/Mission/Components/UIRadarDetection.UIRadarDetection_C
+    SuperIndex : None
+    Dependencies : 
+      - Import:/Game/UI/Mission/Components/UIRadarDetection.UIRadarDetection_C
+    ObjectFlags : 41
+    NotForEditorGame : True
+  - 
+    ObjectName : Default__BaseCharacter_C
+    OuterIndex : None
+    ClassIndex : Export:BaseCharacter_C
+    SuperIndex : None
+    Object : 
+      - 
+        Tag : 
+          Name : Energy
+          Type : ObjectProperty
+        Property : 
+          ObjectValue : Export:Default__BaseCharacter_C.EnergyComponent
+      - 
+        Tag : 
+          Name : Mesh
+          Type : ObjectProperty
+        Property : 
+          ObjectValue : Export:Default__BaseCharacter_C.CharacterMesh0
+      - 
+        Tag : 
+          Name : ArrowComponent
+          Type : ObjectProperty
+        Property : 
+          ObjectValue : Export:Default__BaseCharacter_C.Arrow
+      - 
+        Tag : 
+          Name : CharacterMovement
+          Type : ObjectProperty
+        Property : 
+          ObjectValue : Export:Default__BaseCharacter_C.CharMoveComp
+      - 
+        Tag : 
+          Name : CapsuleComponent
+          Type : ObjectProperty
+        Property : 
+          ObjectValue : Export:Default__BaseCharacter_C.CollisionCylinder
+      - 
+        Tag : 
+          Name : BaseEyeHeight
+          Type : FloatProperty
+        Property : 80.00000000000000000000
+      - 
+        Tag : 
+          Name : NetCullDistanceSquared
+          Type : FloatProperty
+        Property : 825000000.00000000000000000000
+      - 
+        Tag : 
+          Name : RootComponent
+          Type : ObjectProperty
+        Property : 
+          ObjectValue : Export:Default__BaseCharacter_C.CollisionCylinder
+    Dependencies : 
+      - Export:Default__BaseCharacter_C.EnergyComponent
+      - Export:Default__BaseCharacter_C.CharacterMesh0
+      - Export:Default__BaseCharacter_C.Arrow
+      - Export:Default__BaseCharacter_C.CharMoveComp
+      - Export:Default__BaseCharacter_C.CollisionCylinder
+      - Export:BaseCharacter_C
+      - Import:/Script/W1.Default__W1Character
+    ObjectFlags : 17
+  - 
+    ObjectName : Arrow
+    OuterIndex : Export:Default__BaseCharacter_C
+    ClassIndex : Import:/Script/Engine.ArrowComponent
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : AttachParent
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:Default__BaseCharacter_C.CollisionCylinder
+    Dependencies : 
+      - Export:Default__BaseCharacter_C.CollisionCylinder
+      - Import:/Script/W1.Default__W1Character.Arrow
+      - Import:/Script/W1.Default__W1Character
+    ObjectFlags : 262153
+    NotForClient : True
+    NotForServer : True
+    NotForEditorGame : True
+  - 
+    ObjectName : CollisionCylinder
+    OuterIndex : Export:Default__BaseCharacter_C
+    ClassIndex : Import:/Script/Engine.CapsuleComponent
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : BodyInstance
+            Type : StructProperty
+            StructName : BodyInstance
+          Property : 
+            - 
+              Tag : 
+                Name : MassInKg
+                Type : FloatProperty
+              Property : 114.63198852539062000000
+    Dependencies : 
+      - Import:/Script/W1.Default__W1Character.CollisionCylinder
+      - Import:/Script/W1.Default__W1Character
+    ObjectFlags : 262153
+    NotForEditorGame : True
+  - 
+    ObjectName : CharMoveComp
+    OuterIndex : Export:Default__BaseCharacter_C
+    ClassIndex : Import:/Script/Engine.CharacterMovementComponent
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : UpdatedComponent
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:Default__BaseCharacter_C.CollisionCylinder
+    Dependencies : 
+      - Export:Default__BaseCharacter_C.CollisionCylinder
+      - Import:/Script/W1.Default__W1Character.CharMoveComp
+      - Import:/Script/W1.Default__W1Character
+    ObjectFlags : 262153
+    NotForEditorGame : True
+  - 
+    ObjectName : CharacterMesh0
+    OuterIndex : Export:Default__BaseCharacter_C
+    ClassIndex : Import:/Script/Engine.SkeletalMeshComponent
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : OverrideMaterials
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : None
+            - 
+              ObjectValue : None
+        - 
+          Tag : 
+            Name : BodyInstance
+            Type : StructProperty
+            StructName : BodyInstance
+          Property : 
+            - 
+              Tag : 
+                Name : MassInKg
+                Type : FloatProperty
+              Property : 446.18347167968750000000
+        - 
+          Tag : 
+            Name : AttachParent
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:Default__BaseCharacter_C.CollisionCylinder
+        - 
+          Tag : 
+            Name : RelativeLocation
+            Type : StructProperty
+            StructName : Vector
+          Property : 
+            Z : -86.00000000000000000000
+        - 
+          Tag : 
+            Name : RelativeRotation
+            Type : StructProperty
+            StructName : Rotator
+          Property : 
+            Yaw : -90.00000000000000000000
+    Dependencies : 
+      - Export:Default__BaseCharacter_C.CollisionCylinder
+      - Import:/Script/W1.Default__W1Character.CharacterMesh0
+      - Import:/Script/W1.Default__W1Character
+    ObjectFlags : 262153
+    NotForEditorGame : True
+  - 
+    ObjectName : EnergyComponent
+    OuterIndex : Export:Default__BaseCharacter_C
+    ClassIndex : Import:/Script/W1.W1ResourceComponent
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : Regeneration
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:Default__BaseCharacter_C.EnergyComponent.W1PeriodicRegeneration_0
+    Dependencies : 
+      - Export:Default__BaseCharacter_C.EnergyComponent.W1PeriodicRegeneration_0
+      - Import:/Script/W1.Default__W1Character.EnergyComponent
+      - Import:/Script/W1.Default__W1Character
+    ObjectFlags : 262153
+    NotForEditorGame : True
+  - 
+    ObjectName : W1PeriodicRegeneration_0
+    OuterIndex : Export:Default__BaseCharacter_C.EnergyComponent
+    ClassIndex : Import:/Script/W1.W1PeriodicRegeneration
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : TickLength
+            Type : FloatProperty
+          Property : 0.50000000000000000000
+        - 
+          Tag : 
+            Name : RegenPerSecond
+            Type : FloatProperty
+          Property : 5.00000000000000000000
+    ObjectFlags : 1
+    NotForEditorGame : True
+  - 
+    ObjectName : BaseCharacter
+    OuterIndex : None
+    ClassIndex : Import:/Script/Engine.Blueprint
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : ParentClass
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Import:/Script/W1.W1Character
+        - 
+          Tag : 
+            Name : SimpleConstructionScript
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:BaseCharacter_C.SimpleConstructionScript_1
+        - 
+          Tag : 
+            Name : UbergraphPages
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:BaseCharacter.EventGraph
+        - 
+          Tag : 
+            Name : FunctionGraphs
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:BaseCharacter.UserConstructionScript
+        - 
+          Tag : 
+            Name : CategorySorting
+            Type : ArrayProperty
+            InnerType : NameProperty
+          Property : 
+            - Default
+            - Health
+            - W1Character
+            - UI
+            - Pawn
+            - Camera
+            - Character
+            - Damage
+            - Misc
+            - Rendering
+            - Replication
+            - Actor
+            - Game
+            - Collision
+            - Input
+            - Buffs
+            - Config
+        - 
+          Tag : 
+            Name : BlueprintSystemVersion
+            Type : IntProperty
+          Property : 2
+        - 
+          Tag : 
+            Name : LastEditedDocuments
+            Type : ArrayProperty
+            InnerType : StructProperty
+          Property : 
+            - 
+              - 
+                Tag : 
+                  Name : EditedObject
+                  Type : ObjectProperty
+                Property : 
+                  ObjectValue : Export:BaseCharacter.EventGraph
+              - 
+                Tag : 
+                  Name : SavedViewOffset
+                  Type : StructProperty
+                  StructName : Vector2D
+                Property : 
+                  X : 282.36602783203125000000
+                  Y : -2713.48803710937500000000
+              - 
+                Tag : 
+                  Name : SavedZoomAmount
+                  Type : FloatProperty
+                Property : 0.67500001192092896000
+            - 
+              - 
+                Tag : 
+                  Name : EditedObject
+                  Type : ObjectProperty
+                Property : 
+                  ObjectValue : Export:BaseCharacter.UserConstructionScript
+              - 
+                Tag : 
+                  Name : SavedViewOffset
+                  Type : StructProperty
+                  StructName : Vector2D
+                Property : 
+                  X : -464.99990844726562000000
+                  Y : -450.00000000000000000000
+              - 
+                Tag : 
+                  Name : SavedZoomAmount
+                  Type : FloatProperty
+                Property : 1.00000000000000000000
+        - 
+          Tag : 
+            Name : ThumbnailInfo
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:BaseCharacter.SceneThumbnailInfo_0
+        - 
+          Tag : 
+            Name : GeneratedClass
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:BaseCharacter_C
+        - 
+          Tag : 
+            Name : bLegacyNeedToPurgeSkelRefs
+            Type : BoolProperty
+        - 
+          Tag : 
+            Name : bLegacyGeneratedClassIsAuthoritative
+            Type : BoolProperty
+            BoolVal : 1
+        - 
+          Tag : 
+            Name : BlueprintGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : fccNBFaWcUODmcxSlagnIw==
+      LegacyGeneratedClassIsAuthoritative : True
+    Dependencies : 
+      - Export:BaseCharacter_C.SimpleConstructionScript_1
+      - Export:BaseCharacter.EventGraph
+      - Export:BaseCharacter.UserConstructionScript
+      - Export:BaseCharacter.SceneThumbnailInfo_0
+      - Export:BaseCharacter_C
+    ObjectFlags : 11
+  - 
+    ObjectName : EventGraph
+    OuterIndex : Export:BaseCharacter
+    ClassIndex : Import:/Script/Engine.EdGraph
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : Schema
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Import:/Script/BlueprintGraph.EdGraphSchema_K2
+        - 
+          Tag : 
+            Name : bAllowDeletion
+            Type : BoolProperty
+        - 
+          Tag : 
+            Name : GraphGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : /legKY23xUm0AuRaE7l+gQ==
+    ObjectFlags : 8
+  - 
+    ObjectName : UserConstructionScript
+    OuterIndex : Export:BaseCharacter
+    ClassIndex : Import:/Script/Engine.EdGraph
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : Schema
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Import:/Script/BlueprintGraph.EdGraphSchema_K2
+        - 
+          Tag : 
+            Name : Nodes
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:BaseCharacter.UserConstructionScript.Entry[UserConstructionScript]
+        - 
+          Tag : 
+            Name : bAllowDeletion
+            Type : BoolProperty
+        - 
+          Tag : 
+            Name : GraphGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : Xeyk5a337EawWZyKMYSp+g==
+    Dependencies : 
+      - Export:BaseCharacter.UserConstructionScript.Entry[UserConstructionScript]
+    ObjectFlags : 8
+  - 
+    ObjectName : Entry[UserConstructionScript]
+    OuterIndex : Export:BaseCharacter.UserConstructionScript
+    ClassIndex : Import:/Script/BlueprintGraph.K2Node_FunctionEntry
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : SignatureClass
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Import:/Script/Engine.Actor
+        - 
+          Tag : 
+            Name : SignatureName
+            Type : NameProperty
+          Property : UserConstructionScript
+        - 
+          Tag : 
+            Name : Pins
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:BaseCharacter.UserConstructionScript.Entry[UserConstructionScript].Pin[then]
+        - 
+          Tag : 
+            Name : NodeGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : rC12rn7HSU+usNQWt+iUjA==
+    Dependencies : 
+      - Export:BaseCharacter.UserConstructionScript.Entry[UserConstructionScript].Pin[then]
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[then]
+    OuterIndex : Export:BaseCharacter.UserConstructionScript.Entry[UserConstructionScript]
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : then
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : exec
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : SceneThumbnailInfo_0
+    OuterIndex : Export:BaseCharacter
+    ClassIndex : Import:/Script/UnrealEd.SceneThumbnailInfo
+    SuperIndex : None
+  - 
+    ObjectName : PackageMetaData
+    OuterIndex : None
+    ClassIndex : Import:/Script/CoreUObject.MetaData
+    SuperIndex : None
+    Object : 
+      ObjectMetaDataMap : 
+        - 
+          Key : 
+            Object : Export:BaseCharacter.UserConstructionScript.Entry[UserConstructionScript]
+          Value : 
+            - 
+              Key : DefaultGraphNode
+              Value : true
+        - 
+          Key : 
+            Object : Export:BaseCharacter_C
+          Value : 
+            - 
+              Key : BlueprintType
+              Value : true
+            - 
+              Key : HideCategories
+              Value : Navigation
+        - 
+          Key : 
+            Object : Export:BaseCharacter_C.UserConstructionScript
+          Value : 
+            - 
+              Key : BlueprintInternalUseOnly
+              Value : true
+            - 
+              Key : DisplayName
+              Value : Construction Script
+            - 
+              Key : ModuleRelativePath
+              Value : Classes/GameFramework/Actor.h
+            - 
+              Key : ToolTip
+              Value : Construction script, the place to spawn components and do other setup.\n@note Name used in CreateBlueprint function\n@param       Location        The location.\n@param       Rotation        The rotation.
+        - 
+          Key : 
+            Object : Export:BaseCharacter_C.UIRadarDetection
+          Value : 
+            - 
+              Key : Category
+              Value : Default
+        - 
+          Key : 
+            Object : None
+          Value : 
+            - 
+              Key : Category
+              Value : Default
+        - 
+          Key : 
+            Object : None
+          Value : 
+            - 
+              Key : BlueprintInternalUseOnly
+              Value : true
+            - 
+              Key : DisplayName
+              Value : Construction Script
+            - 
+              Key : ModuleRelativePath
+              Value : Classes/GameFramework/Actor.h
+            - 
+              Key : ToolTip
+              Value : Construction script, the place to spawn components and do other setup.\n@note Name used in CreateBlueprint function\n@param       Location        The location.\n@param       Rotation        The rotation.
+        - 
+          Key : 
+            Object : None
+          Value : 
+            - 
+              Key : BlueprintType
+              Value : true
+            - 
+              Key : HideCategories
+              Value : Navigation
+    ObjectFlags : 2
+    NotForClient : True
+    NotForServer : True
+GatherableTextData : 
+  - 
+    NamespaceName : SpriteCategory
+    SourceData : 
+      SourceString : Characters
+    SourceSiteContexts : 
+      - 
+        KeyName : Characters
+        SiteDescription : /Game/Mechanics/Base/BaseCharacter.Default__BaseCharacter_C:Arrow.SpriteInfo.DisplayName
+        IsEditorOnly : True
+      - 
+        KeyName : Characters
+        SiteDescription : /Game/Mechanics/Base/BaseCharacter.Default__SKEL_BaseCharacter_C:Arrow.SpriteInfo.DisplayName
+        IsEditorOnly : True
+  - 
+    SourceData : 
+      SourceString : Default
+    SourceSiteContexts : 
+      - 
+        KeyName : 1CF2827341CFD7F41E024BAD8A417DA0
+        SiteDescription : /Game/Mechanics/Base/BaseCharacter.BaseCharacter_C:SimpleConstructionScript_1.SCS_Node_2.CategoryName
+        IsEditorOnly : True
+      - 
+        KeyName : 45EAF1B14E0AE0C5127A539FDFA6071E
+        SiteDescription : /Game/Mechanics/Base/BaseCharacter.BaseCharacter_C:SimpleConstructionScript_1.SCS_Node_1.CategoryName
+        IsEditorOnly : True
+Import : 
+  - 
+    ClassPackage : /Script/Engine
+    ClassName : ArrowComponent
+    OuterIndex : Import:/Script/W1.Default__W1Character
+    ObjectName : Arrow
+  - 
+    ClassPackage : /Script/Engine
+    ClassName : BlueprintGeneratedClass
+    OuterIndex : Import:/Game/UI/Mission/Components/UIRadarDetection
+    ObjectName : UIRadarDetection_C
+  - 
+    ClassPackage : /Script/Engine
+    ClassName : CapsuleComponent
+    OuterIndex : Import:/Script/W1.Default__W1Character
+    ObjectName : CollisionCylinder
+  - 
+    ClassPackage : /Script/Engine
+    ClassName : CharacterMovementComponent
+    OuterIndex : Import:/Script/W1.Default__W1Character
+    ObjectName : CharMoveComp
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/BlueprintGraph
+    ObjectName : EdGraphSchema_K2
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/BlueprintGraph
+    ObjectName : K2Node_FunctionEntry
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/CoreUObject
+    ObjectName : Function
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/CoreUObject
+    ObjectName : MetaData
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/CoreUObject
+    ObjectName : Object
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/CoreUObject
+    ObjectName : ObjectProperty
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : Actor
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : ArrowComponent
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : Blueprint
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : BlueprintGeneratedClass
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : CapsuleComponent
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : CharacterMovementComponent
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : EdGraph
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : EdGraphPin
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : SceneComponent
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : SCS_Node
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : SimpleConstructionScript
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : SkeletalMeshComponent
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/UnrealEd
+    ObjectName : SceneThumbnailInfo
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/W1
+    ObjectName : W1Character
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/W1
+    ObjectName : W1PeriodicRegeneration
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/W1
+    ObjectName : W1ResourceComponent
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Function
+    OuterIndex : Import:/Script/Engine.Actor
+    ObjectName : UserConstructionScript
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Package
+    OuterIndex : None
+    ObjectName : /Game/UI/Mission/Components/UIRadarDetection
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Package
+    OuterIndex : None
+    ObjectName : /Script/BlueprintGraph
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Package
+    OuterIndex : None
+    ObjectName : /Script/CoreUObject
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Package
+    OuterIndex : None
+    ObjectName : /Script/Engine
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Package
+    OuterIndex : None
+    ObjectName : /Script/UnrealEd
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Package
+    OuterIndex : None
+    ObjectName : /Script/W1
+  - 
+    ClassPackage : /Script/Engine
+    ClassName : SkeletalMeshComponent
+    OuterIndex : Import:/Script/W1.Default__W1Character
+    ObjectName : CharacterMesh0
+  - 
+    ClassPackage : /Script/W1
+    ClassName : W1Character
+    OuterIndex : Import:/Script/W1
+    ObjectName : Default__W1Character
+  - 
+    ClassPackage : /Script/W1
+    ClassName : W1ResourceComponent
+    OuterIndex : Import:/Script/W1.Default__W1Character
+    ObjectName : EnergyComponent
+Thumbnails : 
+  - 
+    ObjectClassName : Blueprint
+    ObjectPathWithoutPackageName : BaseCharacter
+AssetRegistry : 
+  - 
+    ObjectPath : BaseCharacter
+    ObjectClassName : Blueprint
+    Tags : 
+      - 
+        Key : ParentClass
+        Value : Class\'/Script/W1.W1Character\'
+      - 
+        Key : BlueprintType
+        Value : BPTYPE_Normal
+      - 
+        Key : ImplementedInterfaces
+      - 
+        Key : GeneratedClass
+        Value : BlueprintGeneratedClass\'/Game/Mechanics/Base/BaseCharacter.BaseCharacter_C\'
+      - 
+        Key : NumReplicatedProperties
+        Value : 0
+      - 
+        Key : ParentClassPackage
+        Value : /Script/W1
+      - 
+        Key : NativeParentClass
+        Value : Class\'/Script/W1.W1Character\'
+      - 
+        Key : BlueprintDescription
+      - 
+        Key : ClassFlags
+        Value : 8650768
+      - 
+        Key : IsDataOnly
+        Value : False
+      - 
+        Key : FiB
+        Value : fwALAAEAAQAxAAEAAQABAAEAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAwAAQABAAEAUQBzAHAAcQBmAHMAdQBqAGYAdAABAAwAAQABAAEAUQBzAHAAcQBmAHMAdQBqAGYAdAABAAIAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEAVgBjAGYAcwABAAYAAQABAAEAVgBjAGYAcwABAAMAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABAAQAAQABAAEACQABAAEAAQABAA4AAQABAAEATABqAHQAbgBmAHUAVABkAGkAZgBuAGIAAQAdAAEAAQABAEgAcwBiAHEAaQBFAGoAdABxAG0AYgB6AE8AYgBuAGYAYABGAHcAZgBvAHUASABzAGIAcQBpAAEADAABAAEAAQBGAHcAZgBvAHUASABzAGIAcQBpAAEABQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBFAGYAdABkAHMAagBxAHUAagBwAG8AAQANAAEAAQABAEUAZgB0AGQAcwBqAHEAdQBqAHAAbwABAAYAAQABAAEACQABAAEAAQABAAsAAQABAAEAQwBtAHYAZgBxAHMAagBvAHUAAQAQAAEAAQABAE8AcABIAHMAYgBxAGkAVQBwAHAAbQB1AGoAcQABAAgAAQABAAEAKQBPAHAAbwBmACoAAQAHAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAHAAEAAQABAE8AcABlAGYAdAABAAcAAQABAAEATwBwAGUAZgB0AAEACAABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADAABAAEAAQBRAHMAcABxAGYAcwB1AGoAZgB0AAEADAABAAEAAQBRAHMAcABxAGYAcwB1AGoAZgB0AAEACQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEACwABAAEAAQBHAHYAbwBkAHUAagBwAG8AdAABAAsAAQABAAEARwB2AG8AZAB1AGoAcABvAHQAAQAKAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAGAAEAAQABAE8AYgBuAGYAAQAGAAEAAQABAE8AYgBuAGYAAQALAAEAAQABAAkAAQABAAEAAQAOAAEAAQABAEwAagB0AG4AZgB1AFQAZABpAGYAbgBiAAEAJQABAAEAAQBIAHMAYgBxAGkARQBqAHQAcQBtAGIAegBPAGIAbgBmAGAARABwAG8AdAB1AHMAdgBkAHUAagBwAG8AVABkAHMAagBxAHUAAQAUAAEAAQABAEQAcABvAHQAdQBzAHYAZAB1AGoAcABvAFQAZABzAGoAcQB1AAEADAABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBFAGYAdABkAHMAagBxAHUAagBwAG8AAQANAAEAAQABAEUAZgB0AGQAcwBqAHEAdQBqAHAAbwABAA0AAQABAAEACQABAAEAAQABAAsAAQABAAEAQwBtAHYAZgBxAHMAagBvAHUAAQAQAAEAAQABAE8AcABIAHMAYgBxAGkAVQBwAHAAbQB1AGoAcQABAAgAAQABAAEAKQBPAHAAbwBmACoAAQAOAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAHAAEAAQABAE8AcABlAGYAdAABAAcAAQABAAEATwBwAGUAZgB0AAEADwABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoA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DgABAAEAAQBFAGYAZwBiAHYAbQB1AFcAYgBtAHYAZgABACEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABACIAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAA0AAQABAAEAUQBqAG8ARABiAHUAZgBoAHAAcwB6AAEADQABAAEAAQBRAGoAbwBEAGIAdQBmAGgAcABzAHoAAQAjAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEABgABAAEAAQBmAHkAZgBkAAEAJAABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEAJQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBKAHQAUwBmAGcAZgBzAGYAbwBkAGYAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABACYAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAwAAQABAAEAUQBzAHAAcQBmAHMAdQBqAGYAdAABAAwAAQABAAEAUQBzAHAAcQBmAHMAdQBqAGYAdAABACcAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAwAAQABAAEARABwAG4AcQBwAG8AZgBvAHUAdAABAAwAAQABAAEARABwAG4AcQBwAG8AZgBvAHUAdAABACgAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABACkAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQASAAEAAQABAFYASgBTAGIAZQBiAHMARQBmAHUAZgBkAHUAagBwAG8AAQAqAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAQAAEAAQABAEoAdABUAEQAVABEAHAAbgBxAHAAbwBmAG8AdQABABAAAQABAAEASgB0AFQARABUAEQAcABuAHEAcABvAGYAbwB1AAEAKwABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBRAGoAbwBEAGIAdQBmAGgAcABzAHoAAQANAAEAAQABAFEAagBvAEQAYgB1AGYAaABwAHMAegABACwAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQAIAAEAAQABAHAAYwBrAGYAZAB1AAEALQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBQAGMAawBmAGQAdQBEAG0AYgB0AHQAAQANAAEAAQABAFAAYwBrAGYAZAB1AEQAbQBiAHQAdAABAC4AAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQAUAAEAAQABAFYASgBTAGIAZQBiAHMARQBmAHUAZgBkAHUAagBwAG8AYABEAAEALwABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEAMAABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBKAHQAUwBmAGcAZgBzAGYAbwBkAGYAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAHsAIgAwACIAOgBbAF0ALAAiADEAIgA6AFsAewAiADIAIgA6ACIAMwAiACwAIgA0ACIAOgAiADUAIgAsACIANgAiADoAWwBdACwAIgA3ACIAOgBbAF0AfQBdACwAIgA4ACIAOgBbAHsAIgA5ACIAOgAiADEAMAAiACwAIgAxADEAIgA6ACIAMQAyACIALAAiADEAMwAiADoAWwB7ACIAMQA0ACIAOgAiADEANQAiACwAIgAxADYAIgA6ACIAMQA3ACIALAAiADEAOAAiADoAIgAxADkAIgAsACIAMgAwACIAOgAiADIAMQAiACwAIgAyADIAIgA6ACIAMgAzACIALAAiADIANAAiADoAIgAyADUAIgAsACIAMgA2ACIAOgAiADIANwAiACwAIgAyADgAIgA6AFsAewAiADIAOQAiADoAIgAzADAAIgAsACIAMwAxACIAOgAiADMAMgAiACwAIgAzADMAIgA6ACIAMwA0ACIALAAiADMANQAiADoAZgBhAGwAcwBlACwAIgAzADYAIgA6AGYAYQBsAHMAZQB9AF0AfQBdACwAIgAzADcAIgA6AFsAXQB9AF0ALAAiADMAOAAiADoAWwB7ACIAMwA5ACIAOgAiADQAMAAiACwAIgA0ADEAIgA6AHQAcgB1AGUALAAiADQAMgAiADoAIgA0ADMAIgAsACIANAA0ACIAOgAiADQANQAiACwAIgA0ADYAIgA6AGYAYQBsAHMAZQAsACIANAA3ACIAOgBmAGEAbABzAGUAfQBdAH0A

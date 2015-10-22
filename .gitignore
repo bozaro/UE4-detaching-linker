@@ -1,0 +1,14 @@
+*.opensdf
+*.sdf
+*.sln
+*.suo
+/Binaries
+/Build
+/DerivedDataCache
+/Intermediate
+/Saved
+/Plugins/*/Binaries
+
+# wwise
+/TempDefinitionFile.txt
+/WwiseOutputFile.log

@@ -1,0 +1,2005 @@
+Summary : 
+  MagicPostTag : 2653586369
+  Tag : -1641380927
+  LegacyFileVersion : -5
+  FileVersionUE3 : 864
+  FileVersionUE4 : 482
+  FolderName : None
+  PackageSource : 3801271341
+Export : 
+  - 
+    ObjectName : BasePlayer_C
+    OuterIndex : None
+    ClassIndex : Import:/Script/Engine.BlueprintGeneratedClass
+    SuperIndex : Import:/Game/Mechanics/Base/BaseCharacter.BaseCharacter_C
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : SimpleConstructionScript
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:BasePlayer_C.SimpleConstructionScript_1
+      Next : None
+      SuperStruct : Import:/Game/Mechanics/Base/BaseCharacter.BaseCharacter_C
+      Children : Export:BasePlayer_C.UserConstructionScript
+      FuncMap : 
+        - 
+          Key : UserConstructionScript
+          Value : Export:BasePlayer_C.UserConstructionScript
+      ClassFlags : 12845072
+      ClassWithin : Import:/Script/CoreUObject.Object
+      ClassConfigName : Game
+      ClassGeneratedBy : Export:BasePlayer
+      ClassDefaultObject : Export:Default__BasePlayer_C
+    Dependencies : 
+      - Export:BasePlayer_C.SimpleConstructionScript_1
+      - Import:/Game/Mechanics/Base/BaseCharacter.BaseCharacter_C
+      - Export:BasePlayer_C.UserConstructionScript
+      - Export:BasePlayer
+      - Export:Default__BasePlayer_C
+    ObjectFlags : 9
+    NotForEditorGame : True
+  - 
+    ObjectName : UserConstructionScript
+    OuterIndex : Export:BasePlayer_C
+    ClassIndex : Import:/Script/CoreUObject.Function
+    SuperIndex : Import:/Game/Mechanics/Base/BaseCharacter.BaseCharacter_C.UserConstructionScript
+    Object : 
+      Next : None
+      SuperStruct : Import:/Game/Mechanics/Base/BaseCharacter.BaseCharacter_C.UserConstructionScript
+      Children : None
+      ScriptBytecodeSize : 17
+      ScriptStorageSize : 13
+      ScriptData : 
+        - 94
+        - 90
+        - 94
+        - 28
+        - Import:/Game/Mechanics/Base/BaseCharacter.BaseCharacter_C.UserConstructionScript
+        - 22
+        - 90
+        - 4
+        - 11
+        - 83
+      FunctionFlags : 201459712
+      EventGraphFunction : None
+    Dependencies : 
+      - Import:/Game/Mechanics/Base/BaseCharacter.BaseCharacter_C.UserConstructionScript
+      - Import:/Game/Mechanics/Base/BaseCharacter.BaseCharacter_C
+    ObjectFlags : 1
+    NotForEditorGame : True
+  - 
+    ObjectName : SceneComponent_1
+    OuterIndex : Export:BasePlayer_C
+    ClassIndex : Import:/Script/Engine.SceneComponent
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : bVisualizeComponent
+            Type : BoolProperty
+            BoolVal : 1
+    ObjectFlags : 41
+    NotForEditorGame : True
+  - 
+    ObjectName : SimpleConstructionScript_1
+    OuterIndex : Export:BasePlayer_C
+    ClassIndex : Import:/Script/Engine.SimpleConstructionScript
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : DefaultSceneRootNode
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:BasePlayer_C.SimpleConstructionScript_1.SCS_Node_1
+    Dependencies : 
+      - Export:BasePlayer_C.SimpleConstructionScript_1.SCS_Node_1
+    ObjectFlags : 8
+    NotForEditorGame : True
+  - 
+    ObjectName : SCS_Node_1
+    OuterIndex : Export:BasePlayer_C.SimpleConstructionScript_1
+    ClassIndex : Import:/Script/Engine.SCS_Node
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : ComponentTemplate
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:BasePlayer_C.SceneComponent_1
+        - 
+          Tag : 
+            Name : VariableName
+            Type : NameProperty
+          Property : DefaultSceneRoot
+        - 
+          Tag : 
+            Name : CategoryName
+            Type : TextProperty
+          Property : 
+            DisplayString : 
+              Source : Default
+        - 
+          Tag : 
+            Name : VariableGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : bSD+oBJ6SU6+AA1oxhLsKw==
+    Dependencies : 
+      - Export:BasePlayer_C.SceneComponent_1
+    ObjectFlags : 8
+    NotForEditorGame : True
+  - 
+    ObjectName : Default__BasePlayer_C
+    OuterIndex : None
+    ClassIndex : Export:BasePlayer_C
+    SuperIndex : None
+    Object : 
+      - 
+        Tag : 
+          Name : Energy
+          Type : ObjectProperty
+        Property : 
+          ObjectValue : Export:Default__BasePlayer_C.EnergyComponent
+      - 
+        Tag : 
+          Name : Mesh
+          Type : ObjectProperty
+        Property : 
+          ObjectValue : Export:Default__BasePlayer_C.CharacterMesh0
+      - 
+        Tag : 
+          Name : ArrowComponent
+          Type : ObjectProperty
+        Property : 
+          ObjectValue : Export:Default__BasePlayer_C.Arrow
+      - 
+        Tag : 
+          Name : CharacterMovement
+          Type : ObjectProperty
+        Property : 
+          ObjectValue : Export:Default__BasePlayer_C.CharMoveComp
+      - 
+        Tag : 
+          Name : CapsuleComponent
+          Type : ObjectProperty
+        Property : 
+          ObjectValue : Export:Default__BasePlayer_C.CollisionCylinder
+      - 
+        Tag : 
+          Name : RootComponent
+          Type : ObjectProperty
+        Property : 
+          ObjectValue : Export:Default__BasePlayer_C.CollisionCylinder
+      - 
+        Tag : 
+          Name : ActorLabel
+          Type : StrProperty
+        Property : REINST_BasePlayer_C_788-1
+    Dependencies : 
+      - Export:Default__BasePlayer_C.EnergyComponent
+      - Export:Default__BasePlayer_C.CharacterMesh0
+      - Export:Default__BasePlayer_C.Arrow
+      - Export:Default__BasePlayer_C.CharMoveComp
+      - Export:Default__BasePlayer_C.CollisionCylinder
+      - Export:BasePlayer_C
+      - Import:/Game/Mechanics/Base/BaseCharacter.Default__BaseCharacter_C
+    ObjectFlags : 17
+  - 
+    ObjectName : Arrow
+    OuterIndex : Export:Default__BasePlayer_C
+    ClassIndex : Import:/Script/Engine.ArrowComponent
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : AttachParent
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:Default__BasePlayer_C.CollisionCylinder
+    Dependencies : 
+      - Export:Default__BasePlayer_C.CollisionCylinder
+      - Import:/Game/Mechanics/Base/BaseCharacter.Default__BaseCharacter_C.Arrow
+      - Import:/Game/Mechanics/Base/BaseCharacter.Default__BaseCharacter_C
+    ObjectFlags : 262153
+    NotForClient : True
+    NotForServer : True
+    NotForEditorGame : True
+  - 
+    ObjectName : CollisionCylinder
+    OuterIndex : Export:Default__BasePlayer_C
+    ClassIndex : Import:/Script/Engine.CapsuleComponent
+    SuperIndex : None
+    Dependencies : 
+      - Import:/Game/Mechanics/Base/BaseCharacter.Default__BaseCharacter_C.CollisionCylinder
+      - Import:/Game/Mechanics/Base/BaseCharacter.Default__BaseCharacter_C
+    ObjectFlags : 262153
+    NotForEditorGame : True
+  - 
+    ObjectName : CharMoveComp
+    OuterIndex : Export:Default__BasePlayer_C
+    ClassIndex : Import:/Script/Engine.CharacterMovementComponent
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : UpdatedComponent
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:Default__BasePlayer_C.CollisionCylinder
+    Dependencies : 
+      - Export:Default__BasePlayer_C.CollisionCylinder
+      - Import:/Game/Mechanics/Base/BaseCharacter.Default__BaseCharacter_C.CharMoveComp
+      - Import:/Game/Mechanics/Base/BaseCharacter.Default__BaseCharacter_C
+    ObjectFlags : 262153
+    NotForEditorGame : True
+  - 
+    ObjectName : CharacterMesh0
+    OuterIndex : Export:Default__BasePlayer_C
+    ClassIndex : Import:/Script/Engine.SkeletalMeshComponent
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : AttachParent
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:Default__BasePlayer_C.CollisionCylinder
+    Dependencies : 
+      - Export:Default__BasePlayer_C.CollisionCylinder
+      - Import:/Game/Mechanics/Base/BaseCharacter.Default__BaseCharacter_C.CharacterMesh0
+      - Import:/Game/Mechanics/Base/BaseCharacter.Default__BaseCharacter_C
+    ObjectFlags : 262153
+    NotForEditorGame : True
+  - 
+    ObjectName : EnergyComponent
+    OuterIndex : Export:Default__BasePlayer_C
+    ClassIndex : Import:/Script/W1.W1ResourceComponent
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : Regeneration
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:Default__BasePlayer_C.EnergyComponent.W1PeriodicRegeneration_3
+    Dependencies : 
+      - Export:Default__BasePlayer_C.EnergyComponent.W1PeriodicRegeneration_3
+      - Import:/Game/Mechanics/Base/BaseCharacter.Default__BaseCharacter_C.EnergyComponent
+      - Import:/Game/Mechanics/Base/BaseCharacter.Default__BaseCharacter_C
+    ObjectFlags : 262153
+    NotForEditorGame : True
+  - 
+    ObjectName : W1PeriodicRegeneration_3
+    OuterIndex : Export:Default__BasePlayer_C.EnergyComponent
+    ClassIndex : Import:/Script/W1.W1PeriodicRegeneration
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : TickLength
+            Type : FloatProperty
+          Property : 0.50000000000000000000
+        - 
+          Tag : 
+            Name : RegenPerSecond
+            Type : FloatProperty
+          Property : 5.00000000000000000000
+    ObjectFlags : 1
+    NotForEditorGame : True
+  - 
+    ObjectName : BasePlayer
+    OuterIndex : None
+    ClassIndex : Import:/Script/Engine.Blueprint
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : ParentClass
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Import:/Game/Mechanics/Base/BaseCharacter.BaseCharacter_C
+        - 
+          Tag : 
+            Name : SimpleConstructionScript
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:BasePlayer_C.SimpleConstructionScript_1
+        - 
+          Tag : 
+            Name : UbergraphPages
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph
+        - 
+          Tag : 
+            Name : FunctionGraphs
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:BasePlayer.UserConstructionScript
+        - 
+          Tag : 
+            Name : CategorySorting
+            Type : ArrayProperty
+            InnerType : NameProperty
+          Property : 
+            - Health
+            - W1Character
+            - UI
+            - Pawn
+            - Camera
+            - Character
+            - Misc
+            - Rendering
+            - Replication
+            - Actor
+            - Game
+            - Collision
+            - Input
+            - Default
+            - Damage
+            - Buffs
+            - Config
+        - 
+          Tag : 
+            Name : BlueprintSystemVersion
+            Type : IntProperty
+          Property : 2
+        - 
+          Tag : 
+            Name : LastEditedDocuments
+            Type : ArrayProperty
+            InnerType : StructProperty
+          Property : 
+            - 
+              - 
+                Tag : 
+                  Name : EditedObject
+                  Type : ObjectProperty
+                Property : 
+                  ObjectValue : Export:BasePlayer.EventGraph
+              - 
+                Tag : 
+                  Name : SavedViewOffset
+                  Type : StructProperty
+                  StructName : Vector2D
+                Property : 
+                  X : -683.23803710937500000000
+                  Y : -314.54763793945312000000
+              - 
+                Tag : 
+                  Name : SavedZoomAmount
+                  Type : FloatProperty
+                Property : 0.75000000000000000000
+            - 
+              - 
+                Tag : 
+                  Name : EditedObject
+                  Type : ObjectProperty
+                Property : 
+                  ObjectValue : Export:BasePlayer.UserConstructionScript
+              - 
+                Tag : 
+                  Name : SavedViewOffset
+                  Type : StructProperty
+                  StructName : Vector2D
+                Property : 
+                  X : -233.00000000000000000000
+                  Y : -364.00000000000000000000
+              - 
+                Tag : 
+                  Name : SavedZoomAmount
+                  Type : FloatProperty
+                Property : 1.00000000000000000000
+        - 
+          Tag : 
+            Name : ThumbnailInfo
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:BasePlayer.SceneThumbnailInfo_0
+        - 
+          Tag : 
+            Name : GeneratedClass
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Export:BasePlayer_C
+        - 
+          Tag : 
+            Name : bLegacyNeedToPurgeSkelRefs
+            Type : BoolProperty
+        - 
+          Tag : 
+            Name : bLegacyGeneratedClassIsAuthoritative
+            Type : BoolProperty
+            BoolVal : 1
+        - 
+          Tag : 
+            Name : BlueprintGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : HtbS25uqmEavklrbAINinw==
+      LegacyGeneratedClassIsAuthoritative : True
+    Dependencies : 
+      - Import:/Game/Mechanics/Base/BaseCharacter.BaseCharacter_C
+      - Export:BasePlayer_C.SimpleConstructionScript_1
+      - Export:BasePlayer.EventGraph
+      - Export:BasePlayer.UserConstructionScript
+      - Export:BasePlayer.SceneThumbnailInfo_0
+      - Export:BasePlayer_C
+    ObjectFlags : 11
+  - 
+    ObjectName : EventGraph
+    OuterIndex : Export:BasePlayer
+    ClassIndex : Import:/Script/Engine.EdGraph
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : Schema
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Import:/Script/BlueprintGraph.EdGraphSchema_K2
+        - 
+          Tag : 
+            Name : Nodes
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_204
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_205
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_206
+        - 
+          Tag : 
+            Name : bAllowDeletion
+            Type : BoolProperty
+        - 
+          Tag : 
+            Name : GraphGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : ZAXNVK0GwUO4vk9+xZfm2Q==
+    Dependencies : 
+      - Export:BasePlayer.EventGraph.K2Node_Event_204
+      - Export:BasePlayer.EventGraph.K2Node_Event_205
+      - Export:BasePlayer.EventGraph.K2Node_Event_206
+    ObjectFlags : 8
+  - 
+    ObjectName : K2Node_Event_204
+    OuterIndex : Export:BasePlayer.EventGraph
+    ClassIndex : Import:/Script/BlueprintGraph.K2Node_Event
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : EventReference
+            Type : StructProperty
+            StructName : MemberReference
+          Property : 
+            - 
+              Tag : 
+                Name : MemberParent
+                Type : ObjectProperty
+              Property : 
+                ObjectValue : Import:/Script/Engine.Actor
+            - 
+              Tag : 
+                Name : MemberName
+                Type : NameProperty
+              Property : ReceiveBeginPlay
+        - 
+          Tag : 
+            Name : bOverrideFunction
+            Type : BoolProperty
+            BoolVal : 1
+        - 
+          Tag : 
+            Name : Pins
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_204.Pin[OutputDelegate]_3
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_204.Pin[then]
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_204.Pin[OutputDelegate]_2
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_204.Pin[OutputDelegate]_1
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_204.Pin[OutputDelegate]_0
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_204.Pin[OutputDelegate]
+        - 
+          Tag : 
+            Name : NodeComment
+            Type : StrProperty
+          Property : This node is disabled and will not be called.\nDrag off pins to build functionality.
+        - 
+          Tag : 
+            Name : NodeGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : xl87ohHYekODy+h9trFKSQ==
+        - 
+          Tag : 
+            Name : bIsNodeEnabled
+            Type : BoolProperty
+    Dependencies : 
+      - Export:BasePlayer.EventGraph.K2Node_Event_204.Pin[OutputDelegate]_3
+      - Export:BasePlayer.EventGraph.K2Node_Event_204.Pin[then]
+      - Export:BasePlayer.EventGraph.K2Node_Event_204.Pin[OutputDelegate]_2
+      - Export:BasePlayer.EventGraph.K2Node_Event_204.Pin[OutputDelegate]_1
+      - Export:BasePlayer.EventGraph.K2Node_Event_204.Pin[OutputDelegate]_0
+      - Export:BasePlayer.EventGraph.K2Node_Event_204.Pin[OutputDelegate]
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OutputDelegate]
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_204
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OutputDelegate
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : delegate
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OutputDelegate]_0
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_204
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OutputDelegate
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : delegate
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OutputDelegate]_1
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_204
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OutputDelegate
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : delegate
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OutputDelegate]_2
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_204
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OutputDelegate
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : delegate
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OutputDelegate]_3
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_204
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OutputDelegate
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : delegate
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : Import:/Script/Engine.Actor
+                MemberName : ReceiveBeginPlay
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[then]
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_204
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : then
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : exec
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : K2Node_Event_205
+    OuterIndex : Export:BasePlayer.EventGraph
+    ClassIndex : Import:/Script/BlueprintGraph.K2Node_Event
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : EventReference
+            Type : StructProperty
+            StructName : MemberReference
+          Property : 
+            - 
+              Tag : 
+                Name : MemberParent
+                Type : ObjectProperty
+              Property : 
+                ObjectValue : Import:/Script/Engine.Actor
+            - 
+              Tag : 
+                Name : MemberName
+                Type : NameProperty
+              Property : ReceiveActorBeginOverlap
+        - 
+          Tag : 
+            Name : bOverrideFunction
+            Type : BoolProperty
+            BoolVal : 1
+        - 
+          Tag : 
+            Name : Pins
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_205.Pin[OutputDelegate]_3
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_205.Pin[then]
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_205.Pin[OtherActor]
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_205.Pin[OutputDelegate]_2
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_205.Pin[OutputDelegate]_1
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_205.Pin[OutputDelegate]_0
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_205.Pin[OutputDelegate]
+        - 
+          Tag : 
+            Name : NodePosY
+            Type : IntProperty
+          Property : 200
+        - 
+          Tag : 
+            Name : NodeComment
+            Type : StrProperty
+          Property : This node is disabled and will not be called.\nDrag off pins to build functionality.
+        - 
+          Tag : 
+            Name : NodeGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : SzSkUYE4VUCzEcTy+sVoJQ==
+        - 
+          Tag : 
+            Name : bIsNodeEnabled
+            Type : BoolProperty
+    Dependencies : 
+      - Export:BasePlayer.EventGraph.K2Node_Event_205.Pin[OutputDelegate]_3
+      - Export:BasePlayer.EventGraph.K2Node_Event_205.Pin[then]
+      - Export:BasePlayer.EventGraph.K2Node_Event_205.Pin[OtherActor]
+      - Export:BasePlayer.EventGraph.K2Node_Event_205.Pin[OutputDelegate]_2
+      - Export:BasePlayer.EventGraph.K2Node_Event_205.Pin[OutputDelegate]_1
+      - Export:BasePlayer.EventGraph.K2Node_Event_205.Pin[OutputDelegate]_0
+      - Export:BasePlayer.EventGraph.K2Node_Event_205.Pin[OutputDelegate]
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OutputDelegate]
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_205
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OutputDelegate
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : delegate
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OtherActor]
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_205
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OtherActor
+        - 
+          Tag : 
+            Name : PinToolTip
+            Type : StrProperty
+          Property : Other Actor\nActor Reference
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : object
+            Object : Import:/Script/Engine.Actor
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OutputDelegate]_0
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_205
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OutputDelegate
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : delegate
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OutputDelegate]_1
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_205
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OutputDelegate
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : delegate
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OutputDelegate]_2
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_205
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OutputDelegate
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : delegate
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OutputDelegate]_3
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_205
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OutputDelegate
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : delegate
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : Import:/Script/Engine.Actor
+                MemberName : ReceiveActorBeginOverlap
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[then]
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_205
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : then
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : exec
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : K2Node_Event_206
+    OuterIndex : Export:BasePlayer.EventGraph
+    ClassIndex : Import:/Script/BlueprintGraph.K2Node_Event
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : EventReference
+            Type : StructProperty
+            StructName : MemberReference
+          Property : 
+            - 
+              Tag : 
+                Name : MemberParent
+                Type : ObjectProperty
+              Property : 
+                ObjectValue : Import:/Script/Engine.Actor
+            - 
+              Tag : 
+                Name : MemberName
+                Type : NameProperty
+              Property : ReceiveTick
+        - 
+          Tag : 
+            Name : bOverrideFunction
+            Type : BoolProperty
+            BoolVal : 1
+        - 
+          Tag : 
+            Name : Pins
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_206.Pin[OutputDelegate]_3
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_206.Pin[then]
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_206.Pin[DeltaSeconds]
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_206.Pin[OutputDelegate]_2
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_206.Pin[OutputDelegate]_1
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_206.Pin[OutputDelegate]_0
+            - 
+              ObjectValue : Export:BasePlayer.EventGraph.K2Node_Event_206.Pin[OutputDelegate]
+        - 
+          Tag : 
+            Name : NodePosY
+            Type : IntProperty
+          Property : 400
+        - 
+          Tag : 
+            Name : NodeComment
+            Type : StrProperty
+          Property : This node is disabled and will not be called.\nDrag off pins to build functionality.
+        - 
+          Tag : 
+            Name : NodeGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : jjEgNFBELkyRZegJMBg5/Q==
+        - 
+          Tag : 
+            Name : bIsNodeEnabled
+            Type : BoolProperty
+    Dependencies : 
+      - Export:BasePlayer.EventGraph.K2Node_Event_206.Pin[OutputDelegate]_3
+      - Export:BasePlayer.EventGraph.K2Node_Event_206.Pin[then]
+      - Export:BasePlayer.EventGraph.K2Node_Event_206.Pin[DeltaSeconds]
+      - Export:BasePlayer.EventGraph.K2Node_Event_206.Pin[OutputDelegate]_2
+      - Export:BasePlayer.EventGraph.K2Node_Event_206.Pin[OutputDelegate]_1
+      - Export:BasePlayer.EventGraph.K2Node_Event_206.Pin[OutputDelegate]_0
+      - Export:BasePlayer.EventGraph.K2Node_Event_206.Pin[OutputDelegate]
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OutputDelegate]
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_206
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OutputDelegate
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : delegate
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[DeltaSeconds]
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_206
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : DeltaSeconds
+        - 
+          Tag : 
+            Name : PinToolTip
+            Type : StrProperty
+          Property : Delta Seconds\nFloat
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : float
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+        - 
+          Tag : 
+            Name : DefaultValue
+            Type : StrProperty
+          Property : 0.0
+        - 
+          Tag : 
+            Name : AutogeneratedDefaultValue
+            Type : StrProperty
+          Property : 0.0
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OutputDelegate]_0
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_206
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OutputDelegate
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : delegate
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OutputDelegate]_1
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_206
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OutputDelegate
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : delegate
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OutputDelegate]_2
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_206
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OutputDelegate
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : delegate
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[OutputDelegate]_3
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_206
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : OutputDelegate
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : delegate
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : Import:/Script/Engine.Actor
+                MemberName : ReceiveTick
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[then]
+    OuterIndex : Export:BasePlayer.EventGraph.K2Node_Event_206
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : then
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : exec
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : UserConstructionScript
+    OuterIndex : Export:BasePlayer
+    ClassIndex : Import:/Script/Engine.EdGraph
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : Schema
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Import:/Script/BlueprintGraph.EdGraphSchema_K2
+        - 
+          Tag : 
+            Name : Nodes
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:BasePlayer.UserConstructionScript.Entry[UserConstructionScript]
+            - 
+              ObjectValue : Export:BasePlayer.UserConstructionScript.K2Node_CallParentFunction_1
+        - 
+          Tag : 
+            Name : bAllowDeletion
+            Type : BoolProperty
+        - 
+          Tag : 
+            Name : GraphGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : Yy+/KVQrpE+6bpXPhYb2xA==
+    Dependencies : 
+      - Export:BasePlayer.UserConstructionScript.Entry[UserConstructionScript]
+      - Export:BasePlayer.UserConstructionScript.K2Node_CallParentFunction_1
+    ObjectFlags : 8
+  - 
+    ObjectName : K2Node_CallParentFunction_1
+    OuterIndex : Export:BasePlayer.UserConstructionScript
+    ClassIndex : Import:/Script/BlueprintGraph.K2Node_CallParentFunction
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : FunctionReference
+            Type : StructProperty
+            StructName : MemberReference
+          Property : 
+            - 
+              Tag : 
+                Name : MemberParent
+                Type : ObjectProperty
+              Property : 
+                ObjectValue : Import:/Game/Mechanics/Base/BaseCharacter.BaseCharacter_C
+            - 
+              Tag : 
+                Name : MemberName
+                Type : NameProperty
+              Property : UserConstructionScript
+            - 
+              Tag : 
+                Name : MemberGuid
+                Type : StructProperty
+                StructName : Guid
+              Property : 
+                Binary : Xeyk5a337EawWZyKMYSp+g==
+        - 
+          Tag : 
+            Name : Pins
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:BasePlayer.UserConstructionScript.K2Node_CallParentFunction_1.Pin[execute]
+            - 
+              ObjectValue : Export:BasePlayer.UserConstructionScript.K2Node_CallParentFunction_1.Pin[then]
+            - 
+              ObjectValue : Export:BasePlayer.UserConstructionScript.K2Node_CallParentFunction_1.Pin[self]
+        - 
+          Tag : 
+            Name : NodePosX
+            Type : IntProperty
+          Property : 208
+        - 
+          Tag : 
+            Name : NodeGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : DHIuAjOH8UygvTvDaGrSww==
+    Dependencies : 
+      - Import:/Game/Mechanics/Base/BaseCharacter.BaseCharacter_C
+      - Export:BasePlayer.UserConstructionScript.K2Node_CallParentFunction_1.Pin[execute]
+      - Export:BasePlayer.UserConstructionScript.K2Node_CallParentFunction_1.Pin[then]
+      - Export:BasePlayer.UserConstructionScript.K2Node_CallParentFunction_1.Pin[self]
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[execute]
+    OuterIndex : Export:BasePlayer.UserConstructionScript.K2Node_CallParentFunction_1
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : execute
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : exec
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+        - 
+          Tag : 
+            Name : LinkedTo
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:BasePlayer.UserConstructionScript.Entry[UserConstructionScript].Pin[then]
+    Dependencies : 
+      - Export:BasePlayer.UserConstructionScript.Entry[UserConstructionScript].Pin[then]
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[self]
+    OuterIndex : Export:BasePlayer.UserConstructionScript.K2Node_CallParentFunction_1
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : self
+        - 
+          Tag : 
+            Name : PinFriendlyName
+            Type : TextProperty
+          Property : 
+            Flags : 8
+            DisplayString : 
+              Source : Target
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : object
+            Object : Import:/Script/Engine.Actor
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+        - 
+          Tag : 
+            Name : bHidden
+            Type : BoolProperty
+            BoolVal : 1
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[then]
+    OuterIndex : Export:BasePlayer.UserConstructionScript.K2Node_CallParentFunction_1
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : then
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : exec
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+    ObjectFlags : 8
+  - 
+    ObjectName : Entry[UserConstructionScript]
+    OuterIndex : Export:BasePlayer.UserConstructionScript
+    ClassIndex : Import:/Script/BlueprintGraph.K2Node_FunctionEntry
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : SignatureClass
+            Type : ObjectProperty
+          Property : 
+            ObjectValue : Import:/Script/Engine.Actor
+        - 
+          Tag : 
+            Name : SignatureName
+            Type : NameProperty
+          Property : UserConstructionScript
+        - 
+          Tag : 
+            Name : Pins
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:BasePlayer.UserConstructionScript.Entry[UserConstructionScript].Pin[then]
+        - 
+          Tag : 
+            Name : NodeGuid
+            Type : StructProperty
+            StructName : Guid
+          Property : 
+            Binary : JrL5C2wtlESNHt1K24v/7w==
+    Dependencies : 
+      - Export:BasePlayer.UserConstructionScript.Entry[UserConstructionScript].Pin[then]
+    ObjectFlags : 8
+  - 
+    ObjectName : Pin[then]
+    OuterIndex : Export:BasePlayer.UserConstructionScript.Entry[UserConstructionScript]
+    ClassIndex : Import:/Script/Engine.EdGraphPin
+    SuperIndex : None
+    Object : 
+      Properties : 
+        - 
+          Tag : 
+            Name : PinName
+            Type : StrProperty
+          Property : then
+        - 
+          Tag : 
+            Name : Direction
+            Type : ByteProperty
+            EnumName : EEdGraphPinDirection
+          Property : 
+            EnumValueName : EGPD_Output
+        - 
+          Tag : 
+            Name : PinType
+            Type : StructProperty
+            StructName : EdGraphPinType
+          Property : 
+            PinCategory : exec
+            Object : None
+            PinSubCategoryMemberReference : 
+              Data : 
+                MemberParent : None
+                MemberName : None
+        - 
+          Tag : 
+            Name : LinkedTo
+            Type : ArrayProperty
+            InnerType : ObjectProperty
+          Property : 
+            - 
+              ObjectValue : Export:BasePlayer.UserConstructionScript.K2Node_CallParentFunction_1.Pin[execute]
+    Dependencies : 
+      - Export:BasePlayer.UserConstructionScript.K2Node_CallParentFunction_1.Pin[execute]
+    ObjectFlags : 8
+  - 
+    ObjectName : SceneThumbnailInfo_0
+    OuterIndex : Export:BasePlayer
+    ClassIndex : Import:/Script/UnrealEd.SceneThumbnailInfo
+    SuperIndex : None
+  - 
+    ObjectName : PackageMetaData
+    OuterIndex : None
+    ClassIndex : Import:/Script/CoreUObject.MetaData
+    SuperIndex : None
+    Object : 
+      ObjectMetaDataMap : 
+        - 
+          Key : 
+            Object : Export:BasePlayer.UserConstructionScript.Entry[UserConstructionScript]
+          Value : 
+            - 
+              Key : DefaultGraphNode
+              Value : true
+        - 
+          Key : 
+            Object : Export:BasePlayer.EventGraph.K2Node_Event_205
+          Value : 
+            - 
+              Key : DefaultGraphNode
+              Value : true
+        - 
+          Key : 
+            Object : Export:BasePlayer_C
+          Value : 
+            - 
+              Key : BlueprintType
+              Value : true
+            - 
+              Key : HideCategories
+              Value : Navigation
+        - 
+          Key : 
+            Object : Export:BasePlayer.EventGraph.K2Node_Event_204
+          Value : 
+            - 
+              Key : DefaultGraphNode
+              Value : true
+        - 
+          Key : 
+            Object : Export:BasePlayer.EventGraph.K2Node_Event_206
+          Value : 
+            - 
+              Key : DefaultGraphNode
+              Value : true
+        - 
+          Key : 
+            Object : None
+          Value : 
+            - 
+              Key : BlueprintInternalUseOnly
+              Value : true
+            - 
+              Key : DisplayName
+              Value : Construction Script
+            - 
+              Key : ModuleRelativePath
+              Value : Classes/GameFramework/Actor.h
+            - 
+              Key : ToolTip
+              Value : Construction script, the place to spawn components and do other setup.\n@note Name used in CreateBlueprint function\n@param       Location        The location.\n@param       Rotation        The rotation.
+        - 
+          Key : 
+            Object : Export:BasePlayer_C.UserConstructionScript
+          Value : 
+            - 
+              Key : BlueprintInternalUseOnly
+              Value : true
+            - 
+              Key : DisplayName
+              Value : Construction Script
+            - 
+              Key : ModuleRelativePath
+              Value : Classes/GameFramework/Actor.h
+            - 
+              Key : ToolTip
+              Value : Construction script, the place to spawn components and do other setup.\n@note Name used in CreateBlueprint function\n@param       Location        The location.\n@param       Rotation        The rotation.
+        - 
+          Key : 
+            Object : None
+          Value : 
+            - 
+              Key : BlueprintType
+              Value : true
+            - 
+              Key : HideCategories
+              Value : Navigation
+    ObjectFlags : 2
+    NotForClient : True
+    NotForServer : True
+GatherableTextData : 
+  - 
+    NamespaceName : SpriteCategory
+    SourceData : 
+      SourceString : Characters
+    SourceSiteContexts : 
+      - 
+        KeyName : Characters
+        SiteDescription : /Game/Mechanics/Base/BasePlayer.Default__BasePlayer_C:Arrow.SpriteInfo.DisplayName
+        IsEditorOnly : True
+      - 
+        KeyName : Characters
+        SiteDescription : /Game/Mechanics/Base/BasePlayer.Default__SKEL_BasePlayer_C:Arrow.SpriteInfo.DisplayName
+        IsEditorOnly : True
+  - 
+    SourceData : 
+      SourceString : Default
+    SourceSiteContexts : 
+      - 
+        KeyName : DAD98495481F74F469A2FDBB0A6481A5
+        SiteDescription : /Game/Mechanics/Base/BasePlayer.BasePlayer_C:SimpleConstructionScript_1.SCS_Node_1.CategoryName
+        IsEditorOnly : True
+  - 
+    SourceData : 
+      SourceString : Target
+    SourceSiteContexts : 
+      - 
+        KeyName : B5F8E9D446BBF5B61541C0A80CC88274
+        SiteDescription : /Game/Mechanics/Base/BasePlayer.BasePlayer:UserConstructionScript.K2Node_CallParentFunction_1.Pin[self].PinFriendlyName
+        IsEditorOnly : True
+Import : 
+  - 
+    ClassPackage : /Script/Engine
+    ClassName : ArrowComponent
+    OuterIndex : Import:/Game/Mechanics/Base/BaseCharacter.Default__BaseCharacter_C
+    ObjectName : Arrow
+  - 
+    ClassPackage : /Game/Mechanics/Base/BaseCharacter
+    ClassName : BaseCharacter_C
+    OuterIndex : Import:/Game/Mechanics/Base/BaseCharacter
+    ObjectName : Default__BaseCharacter_C
+  - 
+    ClassPackage : /Script/Engine
+    ClassName : BlueprintGeneratedClass
+    OuterIndex : Import:/Game/Mechanics/Base/BaseCharacter
+    ObjectName : BaseCharacter_C
+  - 
+    ClassPackage : /Script/Engine
+    ClassName : CapsuleComponent
+    OuterIndex : Import:/Game/Mechanics/Base/BaseCharacter.Default__BaseCharacter_C
+    ObjectName : CollisionCylinder
+  - 
+    ClassPackage : /Script/Engine
+    ClassName : CharacterMovementComponent
+    OuterIndex : Import:/Game/Mechanics/Base/BaseCharacter.Default__BaseCharacter_C
+    ObjectName : CharMoveComp
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/BlueprintGraph
+    ObjectName : EdGraphSchema_K2
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/BlueprintGraph
+    ObjectName : K2Node_CallParentFunction
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/BlueprintGraph
+    ObjectName : K2Node_Event
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/BlueprintGraph
+    ObjectName : K2Node_FunctionEntry
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/CoreUObject
+    ObjectName : Function
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/CoreUObject
+    ObjectName : MetaData
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/CoreUObject
+    ObjectName : Object
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : Actor
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : ArrowComponent
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : Blueprint
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : BlueprintGeneratedClass
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : CapsuleComponent
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : CharacterMovementComponent
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : EdGraph
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : EdGraphPin
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : SceneComponent
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : SCS_Node
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : SimpleConstructionScript
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/Engine
+    ObjectName : SkeletalMeshComponent
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/UnrealEd
+    ObjectName : SceneThumbnailInfo
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/W1
+    ObjectName : W1PeriodicRegeneration
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Class
+    OuterIndex : Import:/Script/W1
+    ObjectName : W1ResourceComponent
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Function
+    OuterIndex : Import:/Game/Mechanics/Base/BaseCharacter.BaseCharacter_C
+    ObjectName : UserConstructionScript
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Package
+    OuterIndex : None
+    ObjectName : /Game/Mechanics/Base/BaseCharacter
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Package
+    OuterIndex : None
+    ObjectName : /Script/BlueprintGraph
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Package
+    OuterIndex : None
+    ObjectName : /Script/CoreUObject
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Package
+    OuterIndex : None
+    ObjectName : /Script/Engine
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Package
+    OuterIndex : None
+    ObjectName : /Script/UnrealEd
+  - 
+    ClassPackage : /Script/CoreUObject
+    ClassName : Package
+    OuterIndex : None
+    ObjectName : /Script/W1
+  - 
+    ClassPackage : /Script/Engine
+    ClassName : SkeletalMeshComponent
+    OuterIndex : Import:/Game/Mechanics/Base/BaseCharacter.Default__BaseCharacter_C
+    ObjectName : CharacterMesh0
+  - 
+    ClassPackage : /Script/W1
+    ClassName : W1ResourceComponent
+    OuterIndex : Import:/Game/Mechanics/Base/BaseCharacter.Default__BaseCharacter_C
+    ObjectName : EnergyComponent
+Thumbnails : 
+  - 
+    ObjectClassName : Blueprint
+    ObjectPathWithoutPackageName : BasePlayer
+AssetRegistry : 
+  - 
+    ObjectPath : BasePlayer
+    ObjectClassName : Blueprint
+    Tags : 
+      - 
+        Key : ParentClass
+        Value : BlueprintGeneratedClass\'/Game/Mechanics/Base/BaseCharacter.BaseCharacter_C\'
+      - 
+        Key : BlueprintType
+        Value : BPTYPE_Normal
+      - 
+        Key : ImplementedInterfaces
+      - 
+        Key : GeneratedClass
+        Value : BlueprintGeneratedClass\'/Game/Mechanics/Base/BasePlayer.BasePlayer_C\'
+      - 
+        Key : NumReplicatedProperties
+        Value : 0
+      - 
+        Key : ParentClassPackage
+        Value : /Game/Mechanics/Base/BaseCharacter
+      - 
+        Key : NativeParentClass
+        Value : Class\'/Script/W1.W1Character\'
+      - 
+        Key : BlueprintDescription
+      - 
+        Key : ClassFlags
+        Value : 12845072
+      - 
+        Key : IsDataOnly
+        Value : True
+      - 
+        Key : FiB
+        Value : bwA6AAEAAQAKAAIAAQABAAEAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAwAAQABAAEAUQBzAHAAcQBmAHMAdQBqAGYAdAABAAwAAQABAAEAUQBzAHAAcQBmAHMAdQBqAGYAdAABAAIAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEAVgBjAGYAcwABAAYAAQABAAEAVgBjAGYAcwABAAMAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABAAQAAQABAAEACQABAAEAAQABAA4AAQABAAEATABqAHQAbgBmAHUAVABkAGkAZgBuAGIAAQAdAAEAAQABAEgAcwBiAHEAaQBFAGoAdABxAG0AYgB6AE8AYgBuAGYAYABGAHcAZgBvAHUASABzAGIAcQBpAAEADAABAAEAAQBGAHcAZgBvAHUASABzAGIAcQBpAAEABQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBFAGYAdABkAHMAagBxAHUAagBwAG8AAQANAAEAAQABAEUAZgB0AGQAcwBqAHEAdQBqAHAAbwABAAYAAQABAAEACQABAAEAAQABAAsAAQABAAEAQwBtAHYAZgBxAHMAagBvAHUAAQAQAAEAAQABAE8AcABIAHMAYgBxAGkAVQBwAHAAbQB1AGoAcQABAAgAAQABAAEAKQBPAHAAbwBmACoAAQAHAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAHAAEAAQABAE8AcABlAGYAdAABAAcAAQABAAEATwBwAGUAZgB0AAEACAABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoA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bwBkAGYAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAB8AAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABACAAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABACEAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAA4AAQABAAEARQBmAGcAYgB2AG0AdQBXAGIAbQB2AGYAAQAOAAEAAQABAEUAZgBnAGIAdgBtAHUAVwBiAG0AdgBmAAEAIgABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAIwABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBRAGoAbwBEAGIAdQBmAGgAcABzAHoAAQANAAEAAQABAFEAagBvAEQAYgB1AGYAaABwAHMAegABACQAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQAGAAEAAQABAGYAeQBmAGQAAQAlAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQAmAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAA0AAQABAAEASgB0AFMAZgBnAGYAcwBmAG8AZABmAAEAJwABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEABgABAAEAAQBPAGIAbgBmAAEABgABAAEAAQBPAGIAbgBmAAEAKAABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABABEAAQABAAEAUAB2AHUAcQB2AHUAIQBFAGYAbQBmAGgAYgB1AGYAAQApAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAOAAEAAQABAEUAZgBnAGIAdgBtAHUAVwBiAG0AdgBmAAEADgABAAEAAQBFAGYAZwBiAHYAbQB1AFcAYgBtAHYAZgABACoAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAA0AAQABAAEAUQBqAG8ARABiAHUAZgBoAHAAcwB6AAEADQABAAEAAQBRAGoAbwBEAGIAdQBmAGgAcABzAHoAAQArAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEACgABAAEAAQBlAGYAbQBmAGgAYgB1AGYAAQAsAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQAtAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAA0AAQABAAEASgB0AFMAZgBnAGYAcwBmAG8AZABmAAEALgABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEABgABAAEAAQBPAGIAbgBmAAEABgABAAEAAQBPAGIAbgBmAAEALwABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABABEAAQABAAEAUAB2AHUAcQB2AHUAIQBFAGYAbQBmAGgAYgB1AGYAAQAwAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAOAAEAAQABAEUAZgBnAGIAdgBtAHUAVwBiAG0AdgBmAAEADgABAAEAAQBFAGYAZwBiAHYAbQB1AFcAYgBtAHYAZgABADEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABADIAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAA0AAQABAAEAUQBqAG8ARABiAHUAZgBoAHAAcwB6AAEADQABAAEAAQBRAGoAbwBEAGIAdQBmAGgAcABzAHoAAQAzAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEACgABAAEAAQBlAGYAbQBmAGgAYgB1AGYAAQA0AAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQA1AAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAA0AAQABAAEASgB0AFMAZgBnAGYAcwBmAG8AZABmAAEANgABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEABgABAAEAAQBPAGIAbgBmAAEABgABAAEAAQBPAGIAbgBmAAEANwABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADgABAAEAAQBFAGYAZwBiAHYAbQB1AFcAYgBtAHYAZgABAA4AAQABAAEARQBmAGcAYgB2AG0AdQBXAGIAbQB2AGYAAQA4AAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQA5AAEA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AQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAFEAagBvAEQAYgB1AGYAaABwAHMAegABAA0AAQABAAEAUQBqAG8ARABiAHUAZgBoAHAAcwB6AAEAWAABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEAWQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBKAHQAUwBmAGcAZgBzAGYAbwBkAGYAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAFoAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABAFsAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAFwAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAA4AAQABAAEARQBmAGcAYgB2AG0AdQBXAGIAbQB2AGYAAQAOAAEAAQABAEUAZgBnAGIAdgBtAHUAVwBiAG0AdgBmAAEAXQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBRAGoAbwBEAGIAdQBmAGgAcABzAHoAAQANAAEAAQABAFEAagBvAEQAYgB1AGYAaABwAHMAegABAF4AAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQAGAAEAAQABAGYAeQBmAGQAAQBfAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQBgAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAA0AAQABAAEASgB0AFMAZgBnAGYAcwBmAG8AZABmAAEAYQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEABgABAAEAAQBPAGIAbgBmAAEABgABAAEAAQBPAGIAbgBmAAEAYgABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAA0AAQABAAEAUAB1AGkAZgBzACEAQgBkAHUAcABzAAEAYwABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADgABAAEAAQBFAGYAZwBiAHYAbQB1AFcAYgBtAHYAZgABAA4AAQABAAEARQBmAGcAYgB2AG0AdQBXAGIAbQB2AGYAAQBkAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQBlAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAFEAagBvAEQAYgB1AGYAaABwAHMAegABAA0AAQABAAEAUQBqAG8ARABiAHUAZgBoAHAAcwB6AAEAZgABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAgAAQABAAEAcABjAGsAZgBkAHUAAQBnAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAFAAYwBrAGYAZAB1AEQAbQBiAHQAdAABAA0AAQABAAEAUABjAGsAZgBkAHUARABtAGIAdAB0AAEAaAABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAcAAQABAAEAQgBkAHUAcABzAAEAaQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEAagABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBKAHQAUwBmAGcAZgBzAGYAbwBkAGYAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAGsAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABAGwAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQARAAEAAQABAFAAdgB1AHEAdgB1ACEARQBmAG0AZgBoAGIAdQBmAAEAbQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADgABAAEAAQBFAGYAZwBiAHYAbQB1AFcAYgBtAHYAZgABAA4AAQABAAEARQBmAGcAYgB2AG0AdQBXAGIAbQB2AGYAAQBuAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQBvAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAFEAagBvAEQAYgB1AGYAaABwAHMAegABAA0AAQABAAEAUQBqAG8ARABiAHUAZgBoAHAAcwB6AAEAcAABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAoAAQABAAEAZQBmAG0AZgBoAGIAdQBmAAEAcQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEAcgABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBKAHQAUwBmAGcAZgBzAGYAbwBkAGYAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAHMAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABAHQAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQARAAEAAQABAFAAdgB1AHEAdgB1ACEARQBmAG0AZgBoAGIAdQBmAAEAdQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADgABAAEAAQBFAGYAZwBiAHYAbQB1AFcAYgBtAHYAZgABAA4AAQABAAEARQBmAGcAYgB2AG0AdQBXAGIAbQB2AGYAAQB2AAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQB3AAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAFEAagBvAEQAYgB1AGYAaABwAHMAegABAA0AAQABAAEAUQBqAG8ARABiAHUAZgBoAHAAcwB6AAEAeAABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAoAAQABAAEAZQBmAG0AZgBoAGIAdQBmAAEAeQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEAegABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBKAHQAUwBmAGcAZgBzAGYAbwBkAGYAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAHsAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABAHwAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQARAAEAAQABAFAAdgB1AHEAdgB1ACEARQBmAG0AZgBoAGIAdQBmAAEAfQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADgABAAEAAQBFAGYAZwBiAHYAbQB1AFcAYgBtAHYAZgABAA4AAQABAAEARQBmAGcAYgB2AG0AdQBXAGIAbQB2AGYAAQB+AAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQB/AAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAFEAagBvAEQAYgB1AGYAaABwAHMAegABAA0AAQABAAEAUQBqAG8ARABiAHUAZgBoAHAAcwB6AAEAgAABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEAgQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBKAHQAUwBmAGcAZgBzAGYAbwBkAGYAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAIIAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABAIMAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQARAAEAAQABAFAAdgB1AHEAdgB1ACEARQBmAG0AZgBoAGIAdQBmAAEAhAABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADgABAAEAAQBFAGYAZwBiAHYAbQB1AFcAYgBtAHYAZgABAA4AAQABAAEARQBmAGcAYgB2AG0AdQBXAGIAbQB2AGYAAQCFAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQCGAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAFEAagBvAEQAYgB1AGYAaABwAHMAegABAA0AAQABAAEAUQBqAG8ARABiAHUAZgBoAHAAcwB6AAEAhwABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAoAAQABAAEAZQBmAG0AZgBoAGIAdQBmAAEAiAABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEAiQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBKAHQAUwBmAGcAZgBzAGYAbwBkAGYAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAIoAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEA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RwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABAJkAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQARAAEAAQABAFAAdgB1AHEAdgB1ACEARQBmAG0AZgBoAGIAdQBmAAEAmgABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADgABAAEAAQBFAGYAZwBiAHYAbQB1AFcAYgBtAHYAZgABAA4AAQABAAEARQBmAGcAYgB2AG0AdQBXAGIAbQB2AGYAAQCbAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQCcAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAFEAagBvAEQAYgB1AGYAaABwAHMAegABAA0AAQABAAEAUQBqAG8ARABiAHUAZgBoAHAAcwB6AAEAnQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAoAAQABAAEAZQBmAG0AZgBoAGIAdQBmAAEAngABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEAnwABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBKAHQAUwBmAGcAZgBzAGYAbwBkAGYAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAKAAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABAKEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAKIAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAA4AAQABAAEARQBmAGcAYgB2AG0AdQBXAGIAbQB2AGYAAQAOAAEAAQABAEUAZgBnAGIAdgBtAHUAVwBiAG0AdgBmAAEAowABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEApAABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBRAGoAbwBEAGIAdQBmAGgAcABzAHoAAQANAAEAAQABAFEAagBvAEQAYgB1AGYAaABwAHMAegABAKUAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQAGAAEAAQABAGYAeQBmAGQAAQCmAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQCnAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAA0AAQABAAEASgB0AFMAZgBnAGYAcwBmAG8AZABmAAEAqAABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEABgABAAEAAQBPAGIAbgBmAAEABgABAAEAAQBPAGIAbgBmAAEAqQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAA8AAQABAAEARQBmAG0AdQBiACEAVABmAGQAcABvAGUAdAABAKoAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAA4AAQABAAEARQBmAGcAYgB2AG0AdQBXAGIAbQB2AGYAAQAOAAEAAQABAEUAZgBnAGIAdgBtAHUAVwBiAG0AdgBmAAEAqwABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAUAAQABAAEAMQAvADEAAQCsAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAFEAagBvAEQAYgB1AGYAaABwAHMAegABAA0AAQABAAEAUQBqAG8ARABiAHUAZgBoAHAAcwB6AAEArQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAcAAQABAAEAZwBtAHAAYgB1AAEArgABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEArwABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBKAHQAUwBmAGcAZgBzAGYAbwBkAGYAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABALAAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABALEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQARAAEAAQABAFAAdgB1AHEAdgB1ACEARQBmAG0AZgBoAGIAdQBmAAEAsgABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADgABAAEAAQBFAGYAZwBiAHYAbQB1AFcAYgBtAHYAZgABAA4AAQABAAEARQBmAGcAYgB2AG0AdQBXAGIAbQB2AGYAAQCzAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQC0AAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAFEAagBvAEQAYgB1AGYAaABwAHMAegABAA0AAQABAAEAUQBqAG8ARABiAHUAZgBoAHAAcwB6AAEAtQABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEAtgABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBKAHQAUwBmAGcAZgBzAGYAbwBkAGYAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABALcAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABALgAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAA4AAQABAAEARQBmAGcAYgB2AG0AdQBXAGIAbQB2AGYAAQAOAAEAAQABAEUAZgBnAGIAdgBtAHUAVwBiAG0AdgBmAAEAuQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAugABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBRAGoAbwBEAGIAdQBmAGgAcABzAHoAAQANAAEAAQABAFEAagBvAEQAYgB1AGYAaABwAHMAegABALsAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQAKAAEAAQABAGUAZgBtAGYAaABiAHUAZgABALwAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAkAAQABAAEASgB0AEIAcwBzAGIAegABAAkAAQABAAEASgB0AEIAcwBzAGIAegABAL0AAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAA0AAQABAAEASgB0AFMAZgBnAGYAcwBmAG8AZABmAAEADQABAAEAAQBKAHQAUwBmAGcAZgBzAGYAbwBkAGYAAQC+AAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAGAAEAAQABAE8AYgBuAGYAAQAGAAEAAQABAE8AYgBuAGYAAQC/AAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAOAAEAAQABAEUAZgBnAGIAdgBtAHUAVwBiAG0AdgBmAAEADgABAAEAAQBFAGYAZwBiAHYAbQB1AFcAYgBtAHYAZgABAMAAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAMEAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAA0AAQABAAEAUQBqAG8ARABiAHUAZgBoAHAAcwB6AAEADQABAAEAAQBRAGoAbwBEAGIAdQBmAGgAcABzAHoAAQDCAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQDDAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAA0AAQABAAEASgB0AFMAZgBnAGYAcwBmAG8AZABmAAEAxAABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEABgABAAEAAQBPAGIAbgBmAAEABgABAAEAAQBPAGIAbgBmAAEAxQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABABEAAQABAAEAUAB2AHUAcQB2AHUAIQBFAGYAbQBmAGgAYgB1AGYAAQDGAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAOAAEAAQABAEUAZgBnAGIAdgBtAHUAVwBiAG0AdgBmAAEADgABAAEAAQBFAGYAZwBiAHYAbQB1AFcAYgBtAHYAZgABAMcAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAA0AAQABAAEAUQBqAG8ARABiAHUAZgBoAHAAcwB6AAEADQABAAEAAQBRAGoAbwBEAGIAdQBmAGgAcABzAHoAAQDIAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEACgABAAEAAQBlAGYAbQBmAGgAYgB1AGYAAQDJAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQDKAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAA0AAQABAAEASgB0AFMAZgBnAGYAcwBmAG8AZABmAAEAywABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADAABAAEAAQBRAHMAcABxAGYAcwB1AGoAZgB0AAEADAABAAEAAQBRAHMAcABxAGYAcwB1AGoAZgB0AAEAzAABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEACwABAAEAAQBHAHYAbwBkAHUAagBwAG8AdAABAAsAAQABAAEARwB2AG8AZAB1AGoAcABvAHQAAQDNAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAGAAEAAQABAE8AYgBuAGYAAQAGAAEAAQABAE8AYgBuAGYAAQDOAAEAAQABAAkAAQABAAEAAQAOAAEAAQABAEwAagB0AG4AZgB1AFQAZABpAGYAbgBiAAEAJQABAAEAAQBIAHMAYgBxAGkARQBqAHQAcQBtAGIAegBPAGIAbgBmAGAARABwAG8AdAB1AHMAdgBkAHUAagBwAG8AVABkAHMAagBxAHUAAQAUAAEAAQABAEQAcABvAHQAdQBzAHYAZAB1AGoAcABvAFQAZABzAGoAcQB1AAEAzwABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBFAGYAdABkAHMAagBxAHUAagBwAG8AAQANAAEAAQABAEUAZgB0AGQAcwBqAHEAdQBqAHAAbwABANAAAQABAAEACQABAAEAAQABAAsAAQABAAEAQwBtAHYAZgBxAHMAagBvAHUAAQAQAAEAAQABAE8AcABIAHMAYgBxAGkAVQBwAHAAbQB1AGoAcQABAAgAAQABAAEAKQBPAHAAbwBmACoAAQDRAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAHAAEAAQABAE8AcABlAGYAdAABAAcAAQABAAEATwBwAGUAZgB0AAEA0gABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEABgABAAEAAQBPAGIAbgBmAAEABgABAAEAAQBPAGIAbgBmAAEA0wABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABABUAAQABAAEARABwAG8AdAB1AHMAdgBkAHUAagBwAG8AIQBUAGQAcwBqAHEAdQABANQAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAsAAQABAAEARABtAGIAdAB0AE8AYgBuAGYAAQALAAEAAQABAEQAbQBiAHQAdABPAGIAbgBmAAEA1QABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABABYAAQABAAEATAAzAE8AcABlAGYAYABHAHYAbwBkAHUAagBwAG8ARgBvAHUAcwB6AAEA1gABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEACgABAAEAAQBPAHAAZQBmAEgAdgBqAGUAAQAKAAEAAQABAE8AcABlAGYASAB2AGoAZQABANcAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQAiAAEAAQABADEAQwBHADoAQwAzADMANwA1ADUAOgA1ADMARQA3AEQANQBCAEUARQAyAEYAOQBFAEYARwBHAEcAOQBDAEUAQwABANgAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAwAAQABAAEAVABkAGkAZgBuAGIATwBiAG4AZgABAAwAAQABAAEAVABkAGkAZgBuAGIATwBiAG4AZgABANkAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQASAAEAAQABAEYAZQBIAHMAYgBxAGkAVABkAGkAZgBuAGIAYABMADMAAQDaAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAHAAEAAQABAEgAbQB6AHEAaQABAAcAAQABAAEASABtAHoAcQBpAAEA2wABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABABkAAQABAAEASABzAGIAcQBpAEYAZQBqAHUAcABzAC8ARQBmAGcAYgB2AG0AdQBgADIANwB5AAEA3AABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADAABAAEAAQBIAG0AegBxAGkARABwAG0AcABzAAEADAABAAEAAQBIAG0AegBxAGkARABwAG0AcABzAAEA3QABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAC8AAQABAAEAKQBTAD4AMgAvADEAMQAxADEAMQAxAC0ASAA+ADIALwAxADEAMQAxADEAMQAtAEMAPgAyAC8AMQAxADEAMQAxADEALQBCAD4AMgAvADEAMQAxADEAMQAxACoAAQDeAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAJAAEAAQABAEQAcABuAG4AZgBvAHUAAQAJAAEAAQABAEQAcABuAG4AZgBvAHUAAQDfAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQDgAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAGAAEAAQABAFEAagBvAHQAAQAGAAEAAQABAFEAagBvAHQAAQDhAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAGAAEAAQABAE8AYgBuAGYAAQAGAAEAAQABAE8AYgBuAGYAAQDiAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQDjAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAOAAEAAQABAEUAZgBnAGIAdgBtAHUAVwBiAG0AdgBmAAEADgABAAEAAQBFAGYAZwBiAHYAbQB1AFcAYgBtAHYAZgABAOQAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAOUAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAA0AAQABAAEAUQBqAG8ARABiAHUAZgBoAHAAcwB6AAEADQABAAEAAQBRAGoAbwBEAGIAdQBmAGgAcABzAHoAAQDmAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQDnAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAA0AAQABAAEASgB0AFMAZgBnAGYAcwBmAG8AZABmAAEA6AABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEABgABAAEAAQBPAGIAbgBmAAEABgABAAEAAQBPAGIAbgBmAAEA6QABAAEAAQABAAEAAQABAAIACQABAAEAAQABAAgAAQABAAEATAAzAE8AcABlAGYAAQATAAEAAQABAEQAYgBtAG0AVAB2AHEAZgBzAEcAdgBvAGQAdQBqAHAAbwABABgAAQABAAEAUQBiAHMAZgBvAHUAOwAhAHwARwB2AG8AZAB1AGoAcABvAE8AYgBuAGYAfgABAAIAAQABAAEADgABAAEAAQBHAHYAbwBkAHUAagBwAG8ATwBiAG4AZgABAAUAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQAVAAEAAQABAEQAcABvAHQAdQBzAHYAZAB1AGoAcABvACEAVABkAHMAagBxAHUAAQDqAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQALAAEAAQABAEQAbQBiAHQAdABPAGIAbgBmAAEACwABAAEAAQBEAG0AYgB0AHQATwBiAG4AZgABAOsAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQAbAAEAAQABAEwAMwBPAHAAZQBmAGAARABiAG0AbQBRAGIAcwBmAG8AdQBHAHYAbwBkAHUAagBwAG8AAQDsAAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAKAAEAAQABAE8AcABlAGYASAB2AGoAZQABAAoAAQABAAEATwBwAGUAZgBIAHYAagBlAAEA7QABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABACIAAQABAAEAMQAzADMARgA4ADMAMQBEADUARABHADIAOQA4ADQANABEADQANABDAEMARQBCADEARAA0AEUAMwA3AEIANwA5AAEA7gABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADAABAAEAAQBUAGQAaQBmAG4AYgBPAGIAbgBmAAEADAABAAEAAQBUAGQAaQBmAG4AYgBPAGIAbgBmAAEA7wABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABABIAAQABAAEARgBlAEgAcwBiAHEAaQBUAGQAaQBmAG4AYgBgAEwAMwABAPAAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAcAAQABAAEASABtAHoAcQBpAAEABwABAAEAAQBIAG0AegBxAGkAAQDxAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAIAABAAEAAQBMAGoAdABuAGYAdQAvAEIAbQBtAEQAbQBiAHQAdABmAHQALwBHAHYAbwBkAHUAagBwAG8ASgBkAHAAbwABAPIAAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAwAAQABAAEASABtAHoAcQBpAEQAcABtAHAAcwABAAwAAQABAAEASABtAHoAcQBpAEQAcABtAHAAcwABAPMAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQAvAAEAAQABACkAUwA+ADEALwAyADoAMQA2ADMANgAtAEgAPgAxAC8ANgA5ADQAOQA6ADkALQBDAD4AMgAvADEAMQAxADEAMQAxAC0AQgA+ADIALwAxADEAMQAxADEAMQAqAAEA9AABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEACQABAAEAAQBEAHAAbgBuAGYAbwB1AAEACQABAAEAAQBEAHAAbgBuAGYAbwB1AAEA9QABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA9gABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADAABAAEAAQBPAGIAdQBqAHcAZgBPAGIAbgBmAAEADQABAAEAAQBPAGIAdQBqAHcAZgAhAE8AYgBuAGYAAQD3AAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAGAABAAEAAQBWAHQAZgBzAEQAcABvAHQAdQBzAHYAZAB1AGoAcABvAFQAZABzAGoAcQB1AAEA+AABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEABgABAAEAAQBRAGoAbwB0AAEABgABAAEAAQBRAGoAbwB0AAEA+QABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEABgABAAEAAQBPAGIAbgBmAAEABgABAAEAAQBPAGIAbgBmAAEA+gABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA+wABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADgABAAEAAQBFAGYAZwBiAHYAbQB1AFcAYgBtAHYAZgABAA4AAQABAAEARQBmAGcAYgB2AG0AdQBXAGIAbQB2AGYAAQD8AAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQD9AAEAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAFEAagBvAEQAYgB1AGYAaABwAHMAegABAA0AAQABAAEAUQBqAG8ARABiAHUAZgBoAHAAcwB6AAEA/gABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEACQABAAEAAQBKAHQAQgBzAHMAYgB6AAEA/wABAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBKAHQAUwBmAGcAZgBzAGYAbwBkAGYAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAAABAQABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAAYAAQABAAEATwBiAG4AZgABAAYAAQABAAEATwBiAG4AZgABAAEAAgABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAIAAgABAAEACQABAAEAAQABABgAAQABAAEARwBqAG8AZQBKAG8AQwBtAHYAZgBxAHMAagBvAHUATgBiAG8AYgBoAGYAcwABAA4AAQABAAEARQBmAGcAYgB2AG0AdQBXAGIAbQB2AGYAAQAOAAEAAQABAEUAZgBnAGIAdgBtAHUAVwBiAG0AdgBmAAEAAwACAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEABAACAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADQABAAEAAQBRAGoAbwBEAGIAdQBmAGgAcABzAHoAAQANAAEAAQABAFEAagBvAEQAYgB1AGYAaABwAHMAegABAAUAAgABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQAGAAEAAQABAGYAeQBmAGQAAQAGAAIAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQAJAAEAAQABAEoAdABCAHMAcwBiAHoAAQAHAAIAAQABAAkAAQABAAEAAQAYAAEAAQABAEcAagBvAGUASgBvAEMAbQB2AGYAcQBzAGoAbwB1AE4AYgBvAGIAaABmAHMAAQANAAEAAQABAEoAdABTAGYAZwBmAHMAZgBvAGQAZgABAA0AAQABAAEASgB0AFMAZgBnAGYAcwBmAG8AZABmAAEACAACAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADAABAAEAAQBRAHMAcABxAGYAcwB1AGoAZgB0AAEADAABAAEAAQBRAHMAcABxAGYAcwB1AGoAZgB0AAEACQACAAEAAQAJAAEAAQABAAEAGAABAAEAAQBHAGoAbwBlAEoAbwBDAG0AdgBmAHEAcwBqAG8AdQBOAGIAbwBiAGgAZgBzAAEADAABAAEAAQBEAHAAbgBxAHAAbwBmAG8AdQB0AAEADAABAAEAAQBEAHAAbgBxAHAAbwBmAG8AdQB0AAEAewAiADAAIgA6AFsAXQAsACIAMQAiADoAWwB7ACIAMgAiADoAIgAzACIALAAiADQAIgA6ACIANQAiACwAIgA2ACIAOgBbAHsAIgA3ACIAOgAiADgAIgAsACIAOQAiADoAIgAxADAAIgAsACIAMQAxACIAOgAiADEAMgAiACwAIgAxADMAIgA6ACIAMQA0ACIALAAiADEANQAiADoAIgAxADYAIgAsACIAMQA3ACIAOgAiADEAOAAiACwAIgAxADkAIgA6ACIAMgAwACIALAAiADIAMQAiADoAWwB7ACIAMgAyACIAOgAiADIAMwAiACwAIgAyADQAIgA6ACIAMgA1ACIALAAiADIANgAiADoAIgAyADcAIgAsACIAMgA4ACIAOgBmAGEAbABzAGUALAAiADIAOQAiADoAZgBhAGwAcwBlAH0ALAB7ACIAMwAwACIAOgAiADMAMQAiACwAIgAzADIAIgA6ACIAMwAzACIALAAiADMANAAiADoAIgAzADUAIgAsACIAMwA2ACIAOgBmAGEAbABzAGUALAAiADMANwAiADoAZgBhAGwAcwBlAH0ALAB7ACIAMwA4ACIAOgAiADMAOQAiACwAIgA0ADAAIgA6ACIAMgA1ACIALAAiADQAMQAiADoAIgA0ADIAIgAsACIANAAzACIAOgBmAGEAbABzAGUALAAiADQANAAiADoAZgBhAGwAcwBlAH0ALAB7ACIANAA1ACIAOgAiADQANgAiACwAIgA0ADcAIgA6ACIANAA4ACIALAAiADQAOQAiADoAIgA1ADAAIgAsACIANQAxACIAOgBmAGEAbABzAGUALAAiADUAMgAiADoAZgBhAGwAcwBlAH0ALAB7ACIANQAzACIAOgAiADMAOQAiACwAIgA1ADQAIgA6ACIANQA1ACIALAAiADUANgAiADoAIgA1ADcAIgAsACIANQA4ACIAOgBmAGEAbABzAGUALAAiADUAOQAiADoAZgBhAGwAcwBlAH0ALAB7ACIANgAwACIAOgAiADYAMQAiACwAIgA2ADIAIgA6ACIANQA1ACIALAAiADYAMwAiADoAIgA2ADQAIgAsACIANgA1ACIAOgBmAGEAbABzAGUALAAiADYANgAiADoAZgBhAGwAcwBlAH0AXQB9ACwAewAiADYANwAiADoAIgA2ADgAIgAsACIANgA5ACIAOgAiADcAMAAiACwAIgA3ADEAIgA6ACIANwAyACIALAAiADcAMwAiADoAIgA3ADQAIgAsACIANwA1ACIAOgAiADcANgAiACwAIgA3ADcAIgA6ACIANwA4ACIALAAiADcAOQAiADoAIgA4ADAAIgAsACIAOAAxACIAOgBbAHsAIgA4ADIAIgA6ACIAOAAzACIALAAiADgANAAiADoAIgA4ADUAIgAsACIAOAA2ACIAOgAiADYANAAiACwAIgA4ADcAIgA6AGYAYQBsAHMAZQAsACIAOAA4ACIAOgBmAGEAbABzAGUAfQAsAHsAIgA4ADkAIgA6ACIAOQAwACIALAAiADkAMQAiADoAIgA1ADUAIgAsACIAOQAyACIAOgAiADkAMwAiACwAIgA5ADQAIgA6AGYAYQBsAHMAZQAsACIAOQA1ACIAOgBmAGEAbABzAGUAfQAsAHsAIgA5ADYAIgA6ACIAOQA3ACIALAAiADkAOAAiADoAIgA5ADkAIgAsACIAMQAwADAAIgA6ACIAMQAwADEAIgAsACIAMQAwADIAIgA6ACIAMQAwADMAIgAsACIAMQAwADQAIgA6AGYAYQBsAHMAZQAsACIAMQAwADUAIgA6AGYAYQBsAHMAZQB9ACwAewAiADEAMAA2ACIAOgAiADEAMAA3ACIALAAiADEAMAA4ACIAOgAiADEAMAA5ACIALAAiADEAMQAwACIAOgAiADEAMQAxACIALAAiADEAMQAyACIAOgBmAGEAbABzAGUALAAiADEAMQAzACIAOgBmAGEAbABzAGUAfQAsAHsAIgAxADEANAAiADoAIgAxADEANQAiACwAIgAxADEANgAiADoAIgAxADEANwAiACwAIgAxADEAOAAiADoAIgAxADEAOQAiACwAIgAxADIAMAAiADoAZgBhAGwAcwBlACwAIgAxADIAMQAiADoAZgBhAGwAcwBlAH0ALAB7ACIAMQAyADIAIgA6ACIAMQAyADMAIgAsACIAMQAyADQAIgA6ACIAMQAyADUAIgAsACIAMQAyADYAIgA6ACIANgA0ACIALAAiADEAMgA3ACIAOgBmAGEAbABzAGUALAAiADEAMgA4ACIAOgBmAGEAbABzAGUAfQAsAHsAIgAxADIAOQAiADoAIgAxADMAMAAiACwAIgAxADMAMQAiADoAIgAxADMAMgAiACwAIgAxADMAMwAiADoAIgAxADMANAAiACwAIgAxADMANQAiADoAZgBhAGwAcwBlACwAIgAxADMANgAiADoAZgBhAGwAcwBlAH0AXQB9ACwAewAiADEAMwA3ACIAOgAiADEAMwA4ACIALAAiADEAMwA5ACIAOgAiADEAMAAiACwAIgAxADQAMAAiADoAIgAxADQAMQAiACwAIgAxADQAMgAiADoAIgAxADQAMwAiACwAIgAxADQANAAiADoAIgAxADQANQAiACwAIgAxADQANgAiADoAIgAxADQANwAiACwAIgAxADQAOAAiADoAIgAxADQAOQAiACwAIgAxADUAMAAiADoAWwB7ACIAMQA1ADEAIgA6ACIAMQA1ADIAIgAsACIAMQA1ADMAIgA6ACIAMQA1ADQAIgAsACIAMQA1ADUAIgA6ACIAMQA1ADYAIgAsACIAMQA1ADcAIgA6AGYAYQBsAHMAZQAsACIAMQA1ADgAIgA6AGYAYQBsAHMAZQB9ACwAewAiADEANQA5ACIAOgAiADEANgAwACIALAAiADEANgAxACIAOgAiADEANgAyACIALAAiADEANgAzACIAOgAiADEANgA0ACIALAAiADEANgA1ACIAOgBmAGEAbABzAGUALAAiADEANgA2ACIAOgBmAGEAbABzAGUAfQAsAHsAIgAxADYANwAiADoAIgAxADYAOAAiACwAIgAxADYAOQAiADoAIgAxADcAMAAiACwAIgAxADcAMQAiADoAIgAxADcAMgAiACwAIgAxADcAMwAiADoAZgBhAGwAcwBlACwAIgAxADcANAAiADoAZgBhAGwAcwBlAH0ALAB7ACIAMQA3ADUAIgA6ACIAMQA3ADYAIgAsACIAMQA3ADcAIgA6ACIAMQA3ADgAIgAsACIAMQA3ADkAIgA6ACIAMQAxADkAIgAsACIAMQA4ADAAIgA6AGYAYQBsAHMAZQAsACIAMQA4ADEAIgA6AGYAYQBsAHMAZQB9ACwAewAiADEAOAAyACIAOgAiADEAMwAwACIALAAiADEAOAAzACIAOgAiADEAOAA0ACIALAAiADEAOAA1ACIAOgAiADEAOAA2ACIALAAiADEAOAA3ACIAOgBmAGEAbABzAGUALAAiADEAOAA4ACIAOgBmAGEAbABzAGUAfQAsAHsAIgAxADgAOQAiADoAIgAxADEANQAiACwAIgAxADkAMAAiADoAIgAxADkAMQAiACwAIgAxADkAMgAiADoAIgAxADUANgAiACwAIgAxADkAMwAiADoAZgBhAGwAcwBlACwAIgAxADkANAAiADoAZgBhAGwAcwBlAH0ALAB7ACIAMQA5ADUAIgA6ACIAMQA5ADYAIgAsACIAMQA5ADcAIgA6ACIAMQA2ADIAIgAsACIAMQA5ADgAIgA6ACIAMQA5ADkAIgAsACIAMgAwADAAIgA6AGYAYQBsAHMAZQAsACIAMgAwADEAIgA6AGYAYQBsAHMAZQB9AF0AfQBdACwAIgAyADAAMgAiADoAWwBdAH0AXQAsACIAMgAwADMAIgA6AFsAewAiADIAMAA0ACIAOgAiADIAMAA1ACIALAAiADIAMAA2ACIAOgAiADIAMAA3ACIALAAiADIAMAA4ACIAOgBbAHsAIgAyADAAOQAiADoAIgAyADEAMAAiACwAIgAyADEAMQAiADoAIgAyADEAMgAiACwAIgAyADEAMwAiADoAIgAyADEANAAiACwAIgAyADEANQAiADoAIgAyADEANgAiACwAIgAyADEANwAiADoAIgAyADEAOAAiACwAIgAyADEAOQAiADoAIgAyADIAMAAiACwAIgAyADIAMQAiADoAIgAyADIAMgAiACwAIgAyADIAMwAiADoAWwB7ACIAMgAyADQAIgA6ACIAMgAyADUAIgAsACIAMgAyADYAIgA6ACIAMgAyADcAIgAsACIAMgAyADgAIgA6ACIAMQA2ADQAIgAsACIAMgAyADkAIgA6AGYAYQBsAHMAZQAsACIAMgAzADAAIgA6AGYAYQBsAHMAZQB9AF0AfQAsAHsAIgAyADMAMQAiADoAIgAyADMAMgAiACwAIgAyADMAMwAiADoAIgAyADMANAAiACwAIgAyADMANQAiADoAIgAyADMANgAiACwAIgAyADMANwAiADoAIgAyADMAOAAiACwAIgAyADMAOQAiADoAIgAyADQAMAAiACwAIgAyADQAMQAiADoAIgAyADQAMgAiACwAIgAyADQAMwAiADoAIgAyADQANAAiACwAIgAyADQANQAiADoAIgAyADQANgAiACwAIgAyADQANwAiADoAWwB7ACIAMgA0ADgAIgA6ACIAMgA0ADkAIgAsACIAMgA1ADAAIgA6ACIAMgA1ADEAIgAsACIAMgA1ADIAIgA6ACIAMwA1ACIALAAiADIANQAzACIAOgBmAGEAbABzAGUALAAiADIANQA0ACIAOgBmAGEAbABzAGUAfQAsAHsAIgAyADUANQAiADoAIgAyADUANgAiACwAIgAyADUANwAiADoAIgAyADUAOAAiACwAIgAyADUAOQAiADoAIgAyADYAMAAiACwAIgAyADYAMQAiADoAZgBhAGwAcwBlACwAIgAyADYAMgAiADoAZgBhAGwAcwBlAH0AXQB9AF0ALAAiADIANgAzACIAOgBbAF0AfQBdACwAIgAyADYANAAiADoAWwBdAH0A
