@@ -3,7 +3,7 @@
 #pragma once
 
 #include "GameFramework/Character.h"
-#include "Mechanics/Resource/W1ResourceComponent.h"
+#include "W1ResourceComponent.h"
 #include "W1Character.generated.h"
 
 UCLASS()

@@ -3,7 +3,7 @@
 #pragma once
 
 #include "Components/ActorComponent.h"
-#include "W1ResourceRegeneration.h"
+#include "W1PeriodicRegeneration.h"
 #include "W1ResourceComponent.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FResourceChangedSugnature, float, NewValue);
@@ -15,5 +15,5 @@ class UW1ResourceComponent : public UActorComponent
 
 public:
 	UPROPERTY(EditDefaultsOnly, Instanced, Category = "Resource")
-	UW1ResourceRegeneration* Regeneration;
+	UW1PeriodicRegeneration* Regeneration;
 };
