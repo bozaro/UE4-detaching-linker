@@ -2,7 +2,7 @@
 
 UE4 Answerhub: https://answers.unrealengine.com/questions/321533/49-410-master-save-object-error-detaching-from-exi.html
 
-## Steps to reproduce problem
+## Steps to reproduce problem (original found)
 
  * Download project from
  * Open project with Unreal Engine 4.9+ (I tested on 4.9 and master https://github.com/EpicGames/UnrealEngine/commit/a2f8af8fb46a04587c95069a43342a6214cf093e)
@@ -16,7 +16,21 @@ UE4 Answerhub: https://answers.unrealengine.com/questions/321533/49-410-master-s
 
 **Actual result**: Crash.
 
-**Log error:**
+## Steps to reproduce problem (more simple)
+
+ * Download project from
+ * Open project with Unreal Engine 4.9
+ * Open SameCharacter blueprint
+ * Save SameCharacter blueprint (press "Save this asset")
+ * Open SameGameMode blueprint
+ * Open SameCharacter blueprint again
+ * Save SameCharacter blueprint (press "Save this asset")
+ 
+**Expected result**: blueprint saved.
+
+**Actual result**: Crash.
+
+## Log error
 ```
 [2015.10.23-09.53.15:677][ 77]LogWorld: Game class is 'SomeGameMode_C'
 [2015.10.23-09.53.15:682][ 77]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 0) at 2015.10.23-12.53.15
@@ -34,7 +48,7 @@ Detaching from existing linker for E:/Work/W1/W1SaveFail/Content/SomeCharacter.u
 UE4Editor-Win64-Debug.exe has triggered a breakpoint.
 ```
 
-**Stacktrace:**
+## Stacktrace
 ```
 UE4Editor-CoreUObject-Win64-Debug.dll!UObject::SetLinker(FLinkerLoad * LinkerLoad, int LinkerIndex, bool bShouldDetachExisting) Line 102
 UE4Editor-CoreUObject-Win64-Debug.dll!FLinkerLoad::DetachExport(int i) Line 4010
