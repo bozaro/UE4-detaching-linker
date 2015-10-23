@@ -4,7 +4,7 @@ UE4 Answerhub: https://answers.unrealengine.com/questions/321533/49-410-master-s
 
 ## Steps to reproduce problem (original found)
 
- * Download project from
+ * Download project from https://github.com/bozaro/UE4-detaching-linker
  * Open project with Unreal Engine 4.9+ (I tested on 4.9 and master https://github.com/EpicGames/UnrealEngine/commit/a2f8af8fb46a04587c95069a43342a6214cf093e)
  * Open SameCharacter blueprint
  * Save SameCharacter blueprint (press "Save this asset")
@@ -18,7 +18,7 @@ UE4 Answerhub: https://answers.unrealengine.com/questions/321533/49-410-master-s
 
 ## Steps to reproduce problem (more simple)
 
- * Download project from
+ * Download project from https://github.com/bozaro/UE4-detaching-linker
  * Open project with Unreal Engine 4.9
  * Open SameCharacter blueprint
  * Save SameCharacter blueprint (press "Save this asset")
