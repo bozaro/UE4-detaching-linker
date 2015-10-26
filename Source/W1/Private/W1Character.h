@@ -11,6 +11,9 @@ class AW1Character : public ACharacter
 {
 	GENERATED_UCLASS_BODY()
 
+	// Begin UObject interface
+	virtual void PostLoad();
+	// End UObject interface
 public:
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Character)
 	UW1ResourceComponent* Energy;
