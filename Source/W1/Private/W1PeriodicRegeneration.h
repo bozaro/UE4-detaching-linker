@@ -9,4 +9,8 @@ class UW1PeriodicRegeneration : public UObject
 	GENERATED_BODY()
 
 	UW1PeriodicRegeneration(const FObjectInitializer& ObjectInitializer);
+
+	// Begin UObject interface
+	virtual void PostLoad();
+	// End UObject interface
 };

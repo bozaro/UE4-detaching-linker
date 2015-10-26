@@ -13,6 +13,9 @@ class UW1ResourceComponent : public UActorComponent
 {
 	GENERATED_UCLASS_BODY()
 
+	// Begin UObject interface
+	virtual void PostLoad();
+	// End UObject interface
 public:
 	UPROPERTY(EditDefaultsOnly, Instanced, Category = "Resource")
 	UW1PeriodicRegeneration* Regeneration;
